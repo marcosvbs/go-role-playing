@@ -1,0 +1,1908 @@
+{
+  "skills": [
+    {
+      "id": 0,
+      "name": "Coração da Montanha",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Sua constituição foi forjada nos subterrâneos agrestes e impiedosos, onde apenas os mais resistentes conseguem sobreviver. Você é imune a todos os venenos naturais e mágicos e rola +1d6 em testes para resistir à fadiga, doenças e quaisquer outros efeitos físicos. Além disso, sua Carga é calculada como se você tivesse Força +2.",
+      "associations": {
+        "raceId": 0,
+        "vocationId": null
+      }
+    },
+    {
+      "id": 1,
+      "name": "Benção de Lathellanis",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "A proteção de Lathellanis é evidente em você, assim como uma pálida sombra da astúcia da divindade da natureza. Você é imune à todas as doenças de origem natural ou mágica, Dreno de Energia e efeitos que causem Envelhecimento (de qualquer tipo ou origem). Além disso, Você rola +1d6 em todos os seus testes de Inteligência para perceber e rastrear alvos.",
+      "associations": {
+        "raceId": 1,
+        "vocationId": null
+      }
+    },
+    {
+      "id": 2,
+      "name": "Patas com Cascos",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você possui fortes patas munidas de cascos resistentes. Você pode rolar +1d6 quando fizer testes de correr, saltar ou desviar de obstáculos, e seu Deslocamento é aumentado em 1. Além disso, se fizer ataques desarmados com seus cascos, seu dano será Força +2/Contusão",
+      "associations": {
+        "raceId": 2,
+        "vocationId": null
+      }
+    },
+    {
+      "id": 3,
+      "name": "Adaptabilidade",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você se adaptou ao ambiente em que cresceu ou à atividade que escolheu – ou precisou – desempenhar. Você tem +1 em qualquer um dos seus Atributos a sua escolha.",
+      "associations": {
+        "raceId": 3,
+        "vocationId": null
+      }
+    },
+    {
+      "id": 4,
+      "name": "Corpo Pesado",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você possui uma musculatura poderosa – e pesada. Você rola +1d6 em testes de para não ser derrubado e para realizar encontrões, mas é considerado Inapto em testes de natação, escalada e salto. Além disso, você precisa de uma ação de rodada completa para se levantar ao invés de uma ação de movimento, mas sua Carga é calculada como se você tivesse Força +2.",
+      "associations": {
+        "raceId": 4,
+        "vocationId": null
+      }
+    },
+    {
+      "id": 5,
+      "name": "Pernas Vulpinas",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Suas pernas são flexíveis e próprias para saltar, terminando em pés pequenos dotados de solas acolchoadas que permitem que você ande quase sem fazer sons. Você rola +1d6 quando fizer testes para saltar, correr e se mover em silêncio. Além disso, você tem Deslocamento +1 e a distância dos seus saltos é aumentada em 1 metro.",
+      "associations": {
+        "raceId": 5,
+        "vocationId": null
+      }
+    },
+    {
+      "id": 6,
+      "name": "Conhecimento Arcano",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você é capaz de decifrar e canalizar os fenômenos do sobrenatural. Você pode ler e utilizar tomos mágicos e desenhar Runas Arcanas (veja a página 36 para regras sobre magia). Você também é capaz de canalizar sua energia para a conjuração de fenômenos mágicos com eficiência. Sempre que usar uma Habilidade do tipo Magia, você pode gastar Pontos de Vida ao invés de Pontos de Mana para pagar seu custo. Nesse caso, cada 2 Pontos de Vida equivalem à 1 Ponto de Mana.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 7,
+      "name": "Mestre de Armas 1",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você é particularmente eficiente no uso de armas brancas. Sempre que realizar um ataque corporal bem sucedido, adicione 3 ao dano do ataque.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 8,
+      "name": "Gatuno",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você aprendeu com a dura vida nas ruas a sobreviver na selva urbana. Você nunca é considerado Inapto quando tentar furtar bolsos ou arrombar fechaduras usando um kit de arrombamento. Além disso, você rola +1d6 quando tentar escalar, se esconder e tentar passar despercebido.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 9,
+      "name": "Mestre de Armas 1",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você é particularmente eficiente no uso de armas brancas. Sempre que realizar um ataque corporal bem-sucedido, adicione 3 ao dano do ataque.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 10,
+      "name": "Arqueria",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você recebe +2 em todos os seus ataques à distância (incluindo arremessos) e em testes envolvendo Arcos, Bestas, Prodds e fundas de todos os tipos. Você sabe como consertar essas armas e como fabricar a munição para elas. Especial: para consertar as armas ou fabricar a munição, você deve ter as matérias primas adequadas e as ferramentas, com isso faça um teste de Inteligência, a dificuldade é 10 (o Mestre pode aumentar a dificuldade no caso de consertos muito complexos ou de uma fabricação do zero).",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 11,
+      "name": "Conhecimento Místico",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você está ligado às energias místicas provenientes de forças superiores e consegue comungar com elas. Você pode ler e utilizar tomos mágicos e desenhar Selos Místicos (veja a página 36 para regras de magia). Você também pode entrar em um estado de transe se concentrando por 1 minuto. Enquanto continuar meditando dessa forma, você recupera uma quantidade de Pontos de Mana igual à sua Vontade a cada 10 minutos.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 12,
+      "name": "Aparar Magia",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Detectar Magia",
+      "mana": 5,
+      "difficulty": null,
+      "description": "Sempre que for alvo de uma Habilidade do tipo Magia que cause dano ou perda de vida, você pode reduzir aquele dano ou perda de vida pela metade.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 13,
+      "name": "Conhecimento Arcano",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você é capaz de decifrar e canalizar os fenômenos do sobrenatural. Você pode ler e utilizar tomos mágicos e desenhar Runas Arcanas. Você também é capaz de canalizar sua energia para a conjuração de fenômenos mágicos com eficiência. Sempre que usar uma Habilidade do tipo Magia, você pode gastar Pontos de Vida ao invés de Pontos de Mana para pagar seu custo. Nesse caso, cada 2 Pontos de Vida equivalem à 1 Ponto de Mana.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 14,
+      "name": "Arco Voltaico",
+      "type": "Reação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Relâmpago 1, Teleporte 1",
+      "mana": 15,
+      "difficulty": 12,
+      "description": "Você aprendeu a usar sua capacidade de teleporte na velocidade de um raio! Desenhando uma Runa Arcana sobre si mesmo, você sempre pode ativá-la se for alvo de um ataque ou magia que cause dano, se teleportando para algum lugar a um número de metros igual à sua Inteligência de onde você está, evitando o ataque completamente. Essa Runa Arcana se dissipa apenas quando você dormir (ou perder a consciência de alguma forma) e não quando é ativada – mas consome seu custo em Mana sempre que seu efeito for desencadeado.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 15,
+      "name": "Aríete Mágico",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Telecinésia",
+      "mana": 10,
+      "difficulty": 10,
+      "description": "Você projeta um poderoso golpe mágico capaz de derrubar oponentes – e estruturas! Desenhando uma runa arcana no ar, você projeta uma rajada de energia mágica bruta que causa dano igual a 10/Contusão em um alvo em sua linha de visão, e obriga o alvo a vencer um teste de Força com dificuldade igual à Determinação do conjurador para não ser derrubado. Itens inanimados e estruturas sofrem o dobro do dano normal. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 16,
+      "name": "Bola de Fogo",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Inflamar",
+      "mana": 20,
+      "difficulty": 12,
+      "description": "Desenhando uma runa Arcana no ar você projeta uma esfera de chamas de 20 cm de diâmetro contra um alvo na sua linha de visão. A esfera explode ao atingir o alvo, causando dano igual a 20/Fogo nele e 10/Fogo em tudo e todos em até 2 metros dele. Objetos inanimados inflamáveis atingidos por essa magia tendem a entrar em combustão. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 17,
+      "name": "Congelar",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": 8,
+      "description": "Desenhando uma runa Arcana sobre um objeto ou superfície, você infunde um frio intenso congelando-o. Essa magia pode congelar até 200 litros de líquido ou de material sólido por ponto de Inteligência do conjurador. Apenas matéria inanimada pode ser afetada por essa magia. Essa magia pode ser usada para criar uma camada de gelo grosso (cerca de 5 centímetros) e extremamente escorregadio numa área circular com um diâmetro igual à sua Inteligência. Qualquer criatura sobre essa superfície (incluindo você) precisa fazer um teste de Agilidade (Dificuldade 12) sempre que realizar um ataque, se mover ou tentar se levantar. Uma falha nesse teste significa que o personagem cai. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 18,
+      "name": "Detectar Magia",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 0,
+      "difficulty": 8,
+      "description": "Concentrando-se nos fluxos de energias mágicas, você pode enxergar a aura de objetos mágicos, Runas Arcanas e Selos Místicos. Você pode analisar a aura mágica de um Selo, Runa ou objeto para entender suas propriedades observando-a por 1 minuto.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 19,
+      "name": "Eletricidade Estática",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": 8,
+      "description": "Desenhando uma runa Arcana sobre um objeto ou criatura, você o carrega com uma forte carga de eletricidade estática, prendendo-o à qualquer superfície em que estiver tocando. Pode ser usado em um item portátil para tornar impossível que ele seja derrubado ou em uma criatura para impedir que ela tire os pés do chão – reduzindo seu Deslocamento para 0 e sua Agilidade em -2. Um alvo afetado dessa forma pode fazer um teste de Força com dificuldade igual à Determinação do conjurador como uma ação de movimento para tentar tirar os pés do chão. Essa Runa Arcana dura 1 minuto, mas se a criatura afetada conseguir tirar um dos pés do chão, seus efeitos sobre ela se dissipam imediatamente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 20,
+      "name": "Inflamar",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": "Varia",
+      "difficulty": 8,
+      "description": "Desenhando uma Runa Arcana entre você e um objeto ou superfície dentro de sua linha de visão, você faz com que ele irrompa em chamas. O custo depende do tamanho da chama criada: criar a chama em uma vela tem custo 0, enquanto uma chama suficiente para acender uma tocha tem custo 5 e fazer uma fogueira de acampamento irromper em chamas imediatamente tem custo 10. Você pode produzir uma explosão de chamas diretamente sobre um item segurado por uma criatura ou na superfície onde ela está, causando dano igual a 4/Fogo, por 0 Pontos de Mana, 8/Fogo por 5 Pontos de Mana ou 12/Fogo por 10 Pontos de Mana. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas material combustível afetado se incendeia automaticamente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 21,
+      "name": "Infravisão",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Detectar Magia, Inflamar",
+      "mana": 5,
+      "difficulty": 9,
+      "description": "Você desenha uma Runa Arcana sobre um alvo, que passa a perceber o calor que emana dos objetos e criaturas sobrepondo a sua visão normal. Ele pode enxergar normalmente em locais sem iluminação nenhuma, pode perceber criaturas invisíveis pelo calor (ou frio) que elas emanam e consegue identificar ilusões, já que elas não emanam calor nem frio. Essa Runa Arcana dura 1 hora.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 22,
+      "name": "Invocar Elemental 1",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Congelar e Inflamar",
+      "mana": 15,
+      "difficulty": 9,
+      "description": "Você conjura um pequeno Elemental de Fogo ou do Gelo desenhando uma runa Elemental no ar. O Elemental obedecerá todos os seus comandos e agirá a partir do turno seguinte, logo depois de você. A runa que mantém o Elemental coeso se dissipa depois de 10 minutos.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 23,
+      "name": "Invocar Elemental 2",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Invocar Elemental 1",
+      "mana": 30,
+      "difficulty": 11,
+      "description": "Você conjura um Elemental Médio de Fogo ou do Gelo desenhando uma Runa arcana no ar. O Elemental obedecerá todos os seus comandos e agirá a partir do turno seguinte, logo depois de você. A runa que mantém o Elemental coeso se dissipa depois de 10 minutos.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 24,
+      "name": "Levitar",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Telecinésia",
+      "mana": 20,
+      "difficulty": 11,
+      "description": "Desenhando uma Runa Arcana sobre uma criatura, você faz com que ela seja capaz de voar livremente no ar para qualquer direção no seu deslocamento normal. Essa Runa Arcana dura 1 hora, mas se dissipa automaticamente se alvo tocar o solo.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 25,
+      "name": "Manto Crepitante",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Eletricidade Estática",
+      "mana": 15,
+      "difficulty": 9,
+      "description": "Você desenha uma Runa Arcana sobre uma criatura, envolvendo-a numa aura elétrica extremamente brilhante. A aura ilumina uma área de 20 metros ao seu redor, tornando-a clara como se fosse dia, de forma que, qualquer um tentando acertar você à distância (com ataques ou magias) fica ofuscado, realizando seus ataques como se fossem Inaptos. Além disso, a aura elétrica causa dano igual a 10/Eletricidade em qualquer um que tocar em você ou golpeá-lo com ataques corporais. Essa Runa dura 1 minuto, mas pode ser dissipada a qualquer momento pela criatura sobre a qual foi desenhada.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 26,
+      "name": "Mente Disciplinada",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você possui uma vontade extremamente organizada, acostumada a se concentrar em tarefas complexas. Você tem Determinação +2 e as dificuldades de todas as magias que você realiza são reduzidas em 1.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 27,
+      "name": "Parede de Gelo",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Congelar",
+      "mana": 15,
+      "difficulty": 10,
+      "description": "Desenhando uma runa Arcana no ar, você congela a umidade do ambiente na forma de uma grossa parede de gelo. A parede tem 3 metros de altura por 3 de largura e 1 metro de espessura, e pode ser criada em qualquer ângulo. A parede tem 60 Pontos de Vida, Defesa 10, é Vulnerável ao Fogo e sempre que receber dano por Frio recupera Pontos de Vida ao invés de sofrer dano. Ela pode suportar até 500 quilos de peso sobre ela antes de quebrar. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 28,
+      "name": "Rajada de Gelo",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Congelar",
+      "mana": 20,
+      "difficulty": 12,
+      "description": "Desenhando uma Runa arcana no ar você projeta a partir dela uma rajada de energia mágica que causa dano igual a 20/Frio em um alvo dentro da sua linha de visão. Se o alvo for uma criatura viva, ele fica Enregelado por 1 turno. Se a magia tiver como alvo um objeto inanimado, ela congela até 100 litros ou 100 quilos de material. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 29,
+      "name": "Relâmpago 1",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Eletricidade Estática",
+      "mana": 20,
+      "difficulty": 10,
+      "description": "A partir de uma Runa Arcana que desenha no ar você dispara uma faísca elétrica contra um alvo dentro de seu campo de visão. O alvo sofre um dano igual a 20/Eletricidade e fica Atordoado por 2 rodadas. Alvos usando armaduras de metal sofrem o dobro do redutor (-2 na Defesa, no Deslocamento e em todos os seus testes). A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 30,
+      "name": "Rajada Elemental",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 0,
+      "difficulty": 8,
+      "description": "Desenhando uma runa Arcana no ar você pode disparar uma rajada de energia elemental em qualquer alvo que possa ver. Essa magia causa 8 pontos de dano elemental (Fogo, Frio ou Eletricidade) escolhido no momento que o conjurador lança a magia. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 31,
+      "name": "Resistência Elemental",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": 9,
+      "description": "Desenhando uma Runa Arcana sobre uma criatura ou objeto, você confere Resistência ao Fogo, Frio ou Eletricidade a ele. Essa Runa Arcana dura por 1 minuto.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 32,
+      "name": "Telecinésia",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": "Variável",
+      "description": "Desenhando uma Runa Arcana entre você e um objeto ou criatura dentro de sua linha de visão, você pode mover o alvo através de uma energia mágica invisível. O alvo pode ser movido à vontade em qualquer direção, e até mesmo ser erguido no ar, mas apenas de forma lenta (1 metro por turno no máximo). A dificuldade será igual ao peso do alvo dividido por 5 (arredondado para baixo). Se estiver usando essa magia sobre si próprio, diminua a sua Vontade da Dificuldade final. A dificuldade mínima dessa magia será sempre 8, independente do peso do alvo ou da Vontade do Conjurador. Essa Runa Arcana dura por tanto tempo quanto você estiver concentrado nela, mas se o alvo for uma criatura, ela pode cancelar os efeitos dessa Runa no início do seu turno se vencer um teste de Força com dificuldade igual à Determinação do conjurador.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 33,
+      "name": "Teleporte 1",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Levitar",
+      "mana": 30,
+      "difficulty": 12,
+      "description": "Desenhando uma Runa Arcana sobre si mesmo enquanto fita um local você se teleporta de onde está para o ponto que está olhando. Você pode levar alguém com você se puder tocar o alvo e ele concordar (ou estiver inconsciente). Some +2 na dificuldade da magia para cada pessoa além de você. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 0
+      }
+    },
+    {
+      "id": 34,
+      "name": "Anular Golpe",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Defesa Agressiva",
+      "mana": "Varia",
+      "difficulty": null,
+      "description": "Você se especializou em perceber e evitar os ataques mais complexos dos seus adversários. Sempre que um oponente utilizar uma Habilidade de Ação do tipo Técnica, você pode evitar totalmente seus efeitos (incluindo o dano). O custo dessa Habilidade é o mesmo da Técnica a ser evitada. Você só pode utilizar essa Habilidade 1 vez por turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 35,
+      "name": "Ataque do Búfalo",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": null,
+      "description": "Faça uma manobra de encontrão. Se acertar o ataque, além de causar o dano normal pelo encontrão, o alvo precisa vencer um teste de Força (Dificuldade igual à sua Determinação mais a FN da arma que estiver usando) ou será derrubado. Alvos com o dobro do seu peso não são afetados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 36,
+      "name": "Ataque Giratório",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": null,
+      "description": "Você realiza um ataque amplo, girando sua arma para atingir todos os oponentes próximos. Faça um ataque corporal contra cada alvo dentro do seu alcance corporal.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 37,
+      "name": "Ataque Simultâneo",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Combate em Grupo",
+      "mana": 20,
+      "difficulty": null,
+      "description": "Você está acostumado a lutar em grupo e sabe como abrir a guarda de um adversário para que seus aliados possam atingi-lo. Faça um ataque corporal contra um oponente. Se acertar, todos aliados que estiverem adjacentes ao mesmo oponente poderão fazer um ataque corporal normal contra ele imediatamente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 38,
+      "name": "Brigão",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você está acostumado à combater desarmado. Você rola +1 em seus ataques desarmados e adiciona +2 nos danos desses ataques.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 39,
+      "name": "Combate em Grupo",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você ganha +1 nos testes de ataques corporais para cada aliado que esteja em combate corporal com o alvo.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 40,
+      "name": "Combate com Duas Armas 1",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você treinou para usar duas armas em combate de forma eficiente. Você pode fazer um ataque para cada arma que estiver segurando, desde que pelo menos uma delas tenha uma FN igual à metade (ou menos) do que a Força do personagem. Especial: Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 41,
+      "name": "Combate Pesado",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Combate Tático",
+      "mana": 10,
+      "difficulty": null,
+      "description": "Sempre que você fizer uma manobra de encontrão ou um ataque corporal enquanto estiver portando uma arma de duas mãos ou um escudo, você pode rolar novamente 1 dos dados em seus testes de ataque. Você pode escolher com qual dos resultados vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 42,
+      "name": "Combate Tático",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Se você derrotar um oponente com um ataque corporal, você pode imediatamente realizar outro ataque corporal normal.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 43,
+      "name": "Defesa Agressiva",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Defletor",
+      "mana": null,
+      "difficulty": null,
+      "description": "Você entende que a melhor defesa é um ataque eficiente. Quando estiver empunhando uma arma corporal de duas mãos, duas armas corporais ou um escudo, você recebe +1 em seus testes de ataque corporal e +1 na sua Defesa. Esse bônus de Defesa é considerado um bônus de Bloqueio.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 44,
+      "name": "Defletor",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você está acostumado a se defender de projéteis. Enquanto estiver empunhando uma arma corporal de duas mãos, duas armas corporais ou um escudo, você recebe +2 no seu bônus de Bloqueio contra ataques à distância. Esse bônus de Defesa é considerado um bônus de Bloqueio.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 45,
+      "name": "Estabilidade",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você gosta de ter os dois pés solidamente plantados no chão – e faz isso muito bem! Você sempre rola +1d6 em todos os seus testes de evitar quedas e manter o equilíbrio.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 46,
+      "name": "Golpe Devastador 1",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Nocautear",
+      "mana": 30,
+      "difficulty": null,
+      "description": "Você pode fazer um ataque corporal que causa o dobro de dano, e se acertar, o alvo precisa vencer um confronto de Força (adicione a FN da arma que estiver usando no seu teste) contra você ou ficará Paralisado (veja Condições na página 169) por um turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 47,
+      "name": "Golpe com Escudo",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 5,
+      "difficulty": null,
+      "description": "Se você estiver portando um escudo e errar um ataque corporal com sua arma, você pode imediatamente fazer um ataque corporal normal contra o mesmo alvo com seu escudo. Um ataque com um escudo causa dano igual à Força + FN do escudo/Contusão.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 48,
+      "name": "Grito de Guerra 1",
+      "type": "Ação",
+      "category": "Habilidade",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": null,
+      "description": "Você pode dar um grito fervoroso que motiva todos seus aliados. Você e todos os aliados que estiverem em um raio de 5 metros recebem +1 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo de todos os aliados dentro da área dessa Habilidade. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 49,
+      "name": "Guerreiro de Aço 1",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você está acostumado a usar armaduras pesadas. Enquanto você estiver usando um escudo, todos os aliados adjacentes a você recebem um bônus de +1 na Defesa. Este é um bônus de Bloqueio.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 50,
+      "name": "Sem Escapatória",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Combate Tático",
+      "mana": null,
+      "difficulty": null,
+      "description": "Se um oponente que está adjacente a você tentar se afastar ou se levantar, você pode imediatamente fazer um ataque corporal normal contra ele. Se acertar, além de sofrer o dano normal pelo ataque, o oponente não poderá se movimentar neste turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 51,
+      "name": "Transpor",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Defesa Agressiva",
+      "mana": null,
+      "difficulty": null,
+      "description": "Você sabe encontrar os espaços deixados pelo escudo do adversário. Ignore sempre o bônus de Bloqueio da Defesa do oponente. Você considera a FN de qualquer armadura com a Característica Pesada como tendo FN-1 para todos os propósitos.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 52,
+      "name": "Investida Mortal",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": null,
+      "description": "Faça uma manobra de encontrão contra um alvo. Se acertar, esse ataque causa +10 de dano e deixa o alvo Atordoado (veja Condições na página 169) por 1 turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 53,
+      "name": "Nocautear",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": null,
+      "description": "Faça um ataque corporal que cause dano por Contusão. Se acertar, além de sofrer o dano normal do ataque, o alvo fica Paralisado (veja Condições na página 169) por 1 turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 54,
+      "name": "Parede de Escudos",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você está acostumado a lutar em grupo e usar seu escudo para proteger seus aliados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 1
+      }
+    },
+    {
+      "id": 55,
+      "name": "Acrobata",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você sempre rola +1d6 em seus testes de equilíbrio, salto, piruetas e coisas semelhantes. Além disso, você sofre apenas metade dos danos por queda.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 56,
+      "name": "Aparar",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você pode usar qualquer coisa que esteja em suas mãos para afastar e desviar golpes desferidos contra você. Enquanto estiver com um objeto em pelo menos uma das mãos, você recebe Defesa +1. Se estiver segurando um objeto em ambas as mãos ou um objeto em cada mão, você recebe Defesa +2. Este é um bônus de Esquiva.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 57,
+      "name": "Armadilheiro",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você se especializou em desarmar e preparar armadilhas. Você nunca é considerado Inapto para desarmar armadilhas e se tiver os materiais e o tempo necessários, você pode armar uma armadilha. Faça um teste de Inteligência: O resultado do teste será a dificuldade para a armadilha ser percebida e desarmada.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 58,
+      "name": "Ataque Aleijador",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 20,
+      "difficulty": null,
+      "description": "Faça um ataque corporal ou à distância, visando o quadril, joelho ou tornozelo do alvo, comprometendo sua locomoção e deixando um ferimento doloroso. Além de receber o dano normal pelo ataque, o alvo fica com seu Deslocamento reduzido em 1 e sempre que se deslocar ou fizer um teste de Movimentação sofre 10 pontos de dano. Este é um efeito de sangramento.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 59,
+      "name": "Ataque Evasivo",
+      "type": "Ação",
+      "category": "Habilidade",
+      "requirement": "Evasão",
+      "mana": 10,
+      "difficulty": null,
+      "description": "Você realiza um ataque seguido de uma movimentação errática para confundir seu oponente. Faça um ataque baseado em Agilidade. Se acertar, o alvo realiza seus ataques contra você como se fosse Inapto durante o próximo turno. Se o ataque for à distância e houver alguma cobertura à disposição, você pode se esconder tornando impossível para o alvo lhe atacar enquanto ele não o ver primeiro.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 60,
+      "name": "Ataque Redirecionado",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Evasão",
+      "mana": null,
+      "difficulty": null,
+      "description": "Quando um oponente errar um ataque corporal contra você, você pode direcionar o ataque dele para outro alvo. O novo alvo precisa estar adjacente a você ou ao oponente que errou o ataque. Esse ataque acerta automaticamente – sem chance de errar ou de ser um sucesso decisivo. Esta Habilidade só pode ser usada uma vez por rodada.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 61,
+      "name": "Combate com Duas Armas 1",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você treinou para usar duas armas em combate de forma eficiente. Você pode fazer um ataque para cada arma que estiver segurando, desde que pelo menos uma delas tenha uma FN igual à metade (ou menos) do que a Força do personagem. Especial: Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 62,
+      "name": "Contatos no Crime",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você possui muitos contatos entre os criminosos – pequenos e grandes. Com isto você pode descobrir informações privilegiadas ou comprar e vender mercadoria roubada. Obviamente o mestre poderá restringir informações se isso for atrapalhar o andamento ou a trama da campanha, e você nem sempre será capaz de encontrar qualquer item à disposição em qualquer lugar – mas o mercado negro nas grandes cidades costuma estar abastecido de praticamente qualquer item disponível na campanha. Criminosos pagarão metade do preço normal de qualquer item que você quiser vender – desde que tenham dinheiro para tanto – e venderão itens com um custo um terço menor do que o normal. Itens proibido ou controlados, no entanto, podem ser extremamente caros. Informações terão um preço dependendo da importância e dificuldade de obtê-las, de acordo com a vontade do Mestre.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 63,
+      "name": "Corte Arterial",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Ataque Aleijador",
+      "mana": 30,
+      "difficulty": null,
+      "description": "Faça um ataque corporal com uma arma de corte ou perfuração. Se acertar, a vítima começará a sangrar, perdendo 10 Pontos de Vida no início de cada um de seus turnos. Este é um efeito de sangramento.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 64,
+      "name": "Eloquente",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você tem um talento de convencer ou comover outras pessoas apenas falando do jeito certo. Você recebe +1d6 em todos os seus testes para persuadir, mentir, perceber mentiras, intimidar ou em qualquer outra interação social.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 65,
+      "name": "Evasão",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 20,
+      "difficulty": null,
+      "description": "Se o seu inimigo fizer um ataque corporal e acertar, você pode declarar evasão, e obrigar o inimigo a rolar novamente o teste de ataque. Você pode escolher com qual dos resultados o oponente vai ficar. Esta Habilidade só pode ser usada uma vez por turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 66,
+      "name": "Falhas da Armadura",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você sabe como acertar ataques entre as frestas e falhas das armaduras do inimigo. Ignore sempre o bônus de armadura da defesa do oponente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 67,
+      "name": "Flanquear",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você prefere atacar seus alvos quando eles estão desatentos – e é muito eficiente fazendo isso! Sempre que você e pelo menos mais um aliado estiverem em alcance corporal de um oponente, você considera aquele oponente Despreparado em relação a você (ver Condições, pág. 169). Você só pode flanquear um alvo por turno. Se 2 ou mais adversários estiverem adjacentes a você e a um aliado ao mesmo tempo, você deve definir qual deles vai flanquear.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 68,
+      "name": "Flexível",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você tem o corpo muito flexível, capaz de se dobrar, esticar e espremer de maneiras extremas. Você pode passar por aberturas como se tivesse apenas metade do seu tamanho, consegue escorregar para fora de grilhões e amarras com facilidade, pode se esticar e dobrar de modos a alcançar pontos de apoio difíceis numa escalada além de ser mais ágil quando corre e escapa de obstáculos, recebendo um bônus de +2 em qualquer teste que envolva esse tipo de circunstância. Especial: Armaduras com a Característica Pesada impedem que você receba os bônus por esta Habilidade.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 69,
+      "name": "Furtivo",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você é particularmente discreto quando quer. Você pode rolar +1d6 quando fizer testes para se mover em silêncio, se esconder, camuflar, ou usar disfarces.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 70,
+      "name": "Golpes Rápidos",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 30,
+      "difficulty": null,
+      "description": "Você pode fazer dois ataques corporais com uma arma que estiver empunhando, desde que esteja empunhando a arma com apenas 1 mão.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 71,
+      "name": "Mestre das Adagas 1",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você se especializou em arremessar armas pequenas de forma eficiente. Você pode arremessar 2 armas com a característica Arremesso e FN 1.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 72,
+      "name": "Mestre das Adagas 2",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Mestre das Adagas 1",
+      "mana": null,
+      "difficulty": null,
+      "description": "Você refinou sua técnica de arremesso de pequenos objetos. Você pode arremessar até 4 armas com a característica Arremesso e FN 1.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 73,
+      "name": "Movimentos Evasivos",
+      "type": "Suporte",
+      "category": "Habilidade",
+      "requirement": "Acrobata",
+      "mana": null,
+      "difficulty": null,
+      "description": "Você ganha +1 na sua defesa para cada 2 pontos que tiver em Agilidade. Esta habilidade só funciona se você estiver sem armadura. Esse é um bônus de Esquiva.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 74,
+      "name": "Malabarista",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você tem uma ótima coordenação para jogar e pegar objetos no ar. Além de poder realizar malabarismos – mesmo usando objetos perigosos como adagas ou tochas – como entretenimento, você recebe +2 em todas as suas jogadas para arremessar objetos e +1 na Defesa contra ataques à distância. Esse bônus de Defesa conta como Esquiva.",
+      "associations": {
+        "raceId": "Todas",
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 75,
+      "name": "Truque Sujo",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Evasão",
+      "mana": 10,
+      "difficulty": null,
+      "description": "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 2
+      }
+    },
+    {
+      "id": 76,
+      "name": "Austeridade",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": "Código da Honestidade",
+      "mana": null,
+      "difficulty": null,
+      "description": "Sua integridade e retidão são tão inabaláveis que é impossível para outros influenciarem suas decisões. Você é imune a efeitos mentais (mas não Ilusões ou efeitos de Medo) e tentativas de influenciar sua opinião com persuasão e manipulação.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 77,
+      "name": "Cavaleiro Experiente",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você passou muito tempo com animais de montaria e conhece seus hábitos, características e como lidar com eles. Você recebe +1d6 em todos os seus testes referentes à criaturas com a Habilidade Montaria – incluindo cavalgar, treinar e atacar.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 78,
+      "name": "Código da Coragem",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Um Paladino nunca teme a morte, principalmente na proteção dos indefesos. Você nunca pode fugir de uma luta justa e deve sempre proteger os mais fracos – com a vida, se necessário. Você é imune a todos os efeitos de Medo.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 79,
+      "name": "Código da Cortesia",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você se porta de maneira cortês e exala uma aura de autoconfiança e nobreza que inspira aqueles ao seu redor. Você sempre trata os nobres com o respeito que eles merecem e os seus inferiores com a cortesia devida. Você recebe Vontade +1, todos os seus aliados num raio de 1 metro por ponto de Vontade que você tiver também recebem +1 na Vontade.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 80,
+      "name": "Código da Honestidade",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você sempre cumpre suas promessas, não importa quão difícil isso seja, e preza a verdade acima de tudo, emanando uma aura de honestidade que deixa desconfortáveis aqueles que escondem a verdade. Você sempre saberá quando alguém estiver mentindo.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 81,
+      "name": "Código da Justiça",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você confia nas leis para se apoiar e possui uma crença inabalável na ordem. Você sempre respeita as leis vigentes nos locais onde está e não permite que outros as descumpram impunemente. Sua fé na ordem faz com que criaturas geradas no caos se sintam repelidas por você.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 82,
+      "name": "Código da Lealdade",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você nunca ataca um combatente que já está derrotado, nem luta ou permite que outros lutem de forma injusta ou com deslealdade, e jamais trai ou permite que outros traiam aqueles que confiam em você. Você recupera o dobro de Pontos de Vida (por descanso, através de poções, magias, etc.) e é imune a venenos e doenças naturais ou mágicas.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 83,
+      "name": "Combate Montado",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Cavaleiro Experiente",
+      "mana": null,
+      "difficulty": null,
+      "description": "Sempre que fizer um ataque corporal enquanto estiver sobre uma montaria, acrescente +6 de dano ao ataque.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 84,
+      "name": "Combate Tático",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Se você derrotar um oponente com um ataque corporal, você pode imediatamente realizar outro ataque corporal normal (sem usar qualquer Habilidade de Ação).",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 85,
+      "name": "Defletor",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você está acostumado a se defender de projéteis. Enquanto estiver empunhando uma arma corporal de duas mãos, duas armas corporais ou um escudo, você recebe +2 no seu bônus de Bloqueio contra ataques à distância. Esse bônus de Defesa é considerado um bônus de Bloqueio.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 86,
+      "name": "Égide",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Código da Coragem",
+      "mana": 15,
+      "difficulty": null,
+      "description": "Você sempre está pronto para se interpor diante do perigo. Se um ataque ou magia for atingir um alvo adjacente a você, você pode se interpor e sofrer o ataque no lugar do alvo original. Você sofre apenas metade do dano do ataque ou magia, mas sofre quaisquer outros efeitos normalmente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 87,
+      "name": "Estabilidade",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você gosta de ter os dois pés solidamente plantados no chão – e faz isso muito bem! Você sempre rola +1d6 em todos os seus testes de evitar quedas e manter o equilíbrio.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 88,
+      "name": "Grito de Guerra 1",
+      "type": "Ação",
+      "category": "Habilidade",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": null,
+      "description": "Você pode dar um grito fervoroso que motiva todos seus aliados. Você e todos os aliados que estiverem em um raio de 5 metros recebem +1 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo de todos os aliados dentro da área dessa Habilidade. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 89,
+      "name": "Guerreiro de Aço 1",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você está acostumado a usar armaduras pesadas. Você considera a FN de qualquer armadura com a Característica Pesada como tendo FN-1 para todos os propósitos.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 90,
+      "name": "Justiça Final 1",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Código da Justiça",
+      "mana": 25,
+      "difficulty": null,
+      "description": "Você pode fazer um ataque corporal que, se acertar, causa o dobro do dano normal, ou o triplo do dano normal se a criatura for um demônio, morto-vivo ou espírito.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 91,
+      "name": "Montaria Especial 1",
+      "type": "Suporte",
+      "category": "Habilidade",
+      "requirement": "Código da Cortesia",
+      "mana": null,
+      "difficulty": null,
+      "description": "Um animal especial foi atraído pela aura de nobreza que você exala. Ele é extremamente fiel e fará de tudo para protegê-lo. Com assovios e sons você consegue pedir para que ele faça ações simples. Além disso, ele tem 10 Pontos de Vida a mais do que um animal comum de seu tipo. Você pode escolher entre um Cavalo de Guerra, um Pônei de Guerra ou um Camelo de Guerra. Se sua montaria morrer, outro animal do mesmo tipo será atraído em seu lugar assim que você estiver em uma região em que esse tipo de animal seja comum.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 92,
+      "name": "Montaria Especial 2",
+      "type": "Suporte",
+      "category": "Habilidade",
+      "requirement": "Montaria Especial 1, Código da Coragem",
+      "mana": null,
+      "difficulty": null,
+      "description": "Sua montaria especial foi tocada pela sua aura de coragem e tornou-se ainda mais ligada a você. Sua montaria é totalmente imune a efeitos mentais e efeitos de Medo, e recebe +10 Pontos de Vida.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 93,
+      "name": "Motivar",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Código da Lealdade",
+      "mana": 30,
+      "difficulty": null,
+      "description": "Você profere palavras de encorajamento que inspiram seus aliados, recuperando sua moral e vontade. Todos os aliados num raio de 1 metro por ponto de Vontade que você tiver e que puderem lhe ouvir recuperam imediatamente 10 Pontos de Vida e quaisquer efeitos de Medo que os estiver afetando é removido. Estes efeitos não afetam o personagem usando essa Habilidade.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 94,
+      "name": "Nocautear",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": null,
+      "description": "Faça um ataque corporal que cause dano por Contusão. Se acertar, além de sofrer o dano normal do ataque, o alvo fica Paralisado (veja Condições na página 169) por 1 turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 95,
+      "name": "Parede de Escudos",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você está acostumado a lutar em grupo e usar seu escudo para proteger seus aliados. Enquanto você estiver usando um escudo, todos os aliados adjacentes a você recebem um bônus de +1 na Defesa. Este é um bônus de Bloqueio.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 96,
+      "name": "Sem Escapatória",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Combate Tático",
+      "mana": null,
+      "difficulty": null,
+      "description": "Se um oponente que está adjacente a você tentar se afastar ou se levantar, você pode imediatamente fazer um ataque corporal normal contra ele. Se acertar, além de sofrer o dano normal pelo ataque, o oponente não poderá se movimentar neste turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 3
+      }
+    },
+    {
+      "id": 97,
+      "name": "Ataque Aleijador",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 20,
+      "difficulty": null,
+      "description": "Faça um ataque corpo-a-corpo ou à distância visando o quadril, joelho ou tornozelo do alvo, comprometendo sua locomoção e deixando um ferimento doloroso. Além de receber o dano normal pelo ataque, o alvo fica com seu Deslocamento reduzido em 1 e sempre que se deslocar ou fizer um teste de Movimentação sofre 10 pontos de dano. Esse é um efeito de Sangramento.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 98,
+      "name": "Benção de Ellenis",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você é capaz de se comunicar com qualquer Besta do tipo Mamífero, Ave, Réptil ou Peixe. Essa comunicação é rudimentar, baseada nas capacidades da criatura em questão. Além disso, você recebe +2 em todas as rolagens envolvendo essas criaturas e poder alterar o temperamento delas em 1 passo (Furioso ou Cruel para Agressivo, Agressivo para Sobrevivente, Sobrevivente para Pacífico e Pacífico para Covarde ou vice-versa) com um teste de Vontade (Dificuldade igual à Determinação do alvo) – esse efeito não funciona em animais com temperamento Servo ou Protetor. Animais selvagens só irão aceitar “conversar” se tiverem temperamento pacífico ou sobrevivente, a menos que estejam aprisionados ou encurralados de alguma forma.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 99,
+      "name": "Caçador de [Criatura]",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Armadilheiro",
+      "mana": null,
+      "difficulty": null,
+      "description": "Você se especializou em caçar um tipo de criatura. Escolha entre Humanoides, Trogloditas, Bestas ou Esfinges. Você sempre causa +2 pontos de dano em todos os ataques contra este tipo de criatura. Além disso, você recebe +2 em todos os seus testes relacionados a esse tipo de criatura.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 100,
+      "name": "Chuva de Flechas",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Flechas Rápidas",
+      "mana": 30,
+      "difficulty": null,
+      "description": "Você pode atirar até 4 flechas em um só ataque em múltiplos oponentes. Faça uma rolagem para cada flecha, que devem ter alvos diferentes.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 101,
+      "name": "Companheiro Animal 1",
+      "type": "Suporte",
+      "category": "Habilidade",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você possui uma ligação de fidelidade com um animal. Escolha uma Besta dos tipos Mamífero, Ave, Réptil ou Peixe e faça um teste de Vontade (Dificuldade igual à soma de todos os atributos do animal +1 para cada metro de tamanho que o animal tiver). Se passar no teste, o animal escolhido será atraído para você e lhe será fiel até a morte (ele passa a ter o temperamento Protetor). Se o animal morrer, você pode tentar atrair outro animal – que não precisa ser do mesmo tipo escolhido anteriormente – fazendo o mesmo teste. Este teste pode ser realizado 1 vez por dia. Você pode atrair 1 animal de cada vez com essa Habilidade. Especial: Se essa Habilidade for escolhida durante a criação do personagem, o animal já estará com você, sem a necessidade de qualquer teste para atraí-lo, desde que a dificuldade para atraí-lo seja menor do que a soma dos Atributos do personagem.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 102,
+      "name": "Companheiro Animal 2",
+      "type": "Suporte",
+      "category": "Habilidade",
+      "requirement": "Companheiro Animal 1",
+      "mana": null,
+      "difficulty": null,
+      "description": "Seu Companheiro Animal recebe +1 em 2 Atributos à sua escolha, +5 Pontos de vida e +5 Pontos de Mana. Além disso, seu Companheiro Animal recebe uma Habilidade do tipo Técnica à sua escolha (desde que faça sentido; o Mestre tem a palavra final sobre o assunto).",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 103,
+      "name": "Disparo Forte",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Retesar Eficiente",
+      "mana": 10,
+      "difficulty": null,
+      "description": "Faça um ataque à distância. Se acertar, some +8 ao dano da arma.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 104,
+      "name": "Disparo Certeiro",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": null,
+      "description": "Você realiza um ataque à distância rolando +1d6.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 105,
+      "name": "Espírito Animal",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Seu espírito possui a forma de um animal. Escolha um Espírito Animal para ser seu guia. Essa escolha é permanente e não pode ser mudada posteriormente. Veja a descrição dos Espíritos Animais na pág. 143.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 106,
+      "name": "Evasão",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 20,
+      "difficulty": null,
+      "description": "Se o seu inimigo fizer um ataque corporal e acertar, você pode declarar evasão, e obrigar o inimigo a rolar novamente o teste de ataque. Você pode escolher com qual dos resultados o oponente vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 107,
+      "name": "Falhas da Armadura",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você sabe como acertar ataques entre as frestas e falhas das armaduras do inimigo. Ignore sempre o bônus de armadura da defesa do oponente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 108,
+      "name": "Flechas Rápidas",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 20,
+      "difficulty": null,
+      "description": "Após fazer um ataque normal usando um arco, você pode fazer imediatamente outro ataque normal com o arco. Especial: Esta Habilidade só pode ser usada 1 vez por turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 109,
+      "name": "Furtivo",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você é particularmente discreto quando quer. Você pode rolar +1d6 quando fizer testes para se mover em silêncio, se esconder, camuflar, ou usar disfarces.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 110,
+      "name": "Herbalismo",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Sabedoria Selvagem",
+      "mana": null,
+      "difficulty": null,
+      "description": "Você pode rolar testes de Inteligência para criar poções básicas. Além disso, enquanto estiver em um ambiente selvagem, você e seus aliados não são afetados por doenças e venenos de origem natural – seus aliados passam a ser imunes depois de um dia inteiro que estiverem com você (desde que eles aceitem suas dicas do que comer e do que não comer) – e você é sempre considerado como tendo um Kit de Cura á mão, a menos que o ambiente seja completamente estéril (desertos ou áreas glaciais).",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 111,
+      "name": "Precisão",
+      "type": "Suporte",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Disparo Certeiro",
+      "mana": null,
+      "difficulty": null,
+      "description": "Você confia mais em uma pontaria bem feita do que em força bruta quando arremessa armas ou dispara com arcos. Quando fizer ataques à distância você pode usar Inteligência ou Agilidade ao invés de Força para calcular o dano de armas de distância e de arremesso.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 112,
+      "name": "Retesar Eficiente",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você possui uma técnica eficiente em retesar arcos e bestas. Quando estiver usando uma besta ou prodd de qualquer tipo, você ignora a Característica Carregar dessas armas. Quando estiver usando um arco ou funda de qualquer tipo, o dano de seus ataques à distância é aumentado em +2.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 113,
+      "name": "Sabedoria Selvagem",
+      "type": "Suporte",
+      "category": "Habilidade",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você passou muito tempo em ambientes selvagens e dedicou muito tempo ao estudo da natureza em todas as suas formas. Você rola +1d6 em testes que envolvam a natureza como forragear, rastrear, encontrar abrigo, identificar ervas, etc.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 114,
+      "name": "Truque Sujo",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Evasão",
+      "mana": 10,
+      "difficulty": null,
+      "description": "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 4
+      }
+    },
+    {
+      "id": 115,
+      "name": "Abençoar Aliados 1",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Graça Divina",
+      "mana": 10,
+      "difficulty": 10,
+      "description": "Você desenha um Selo Místico sobre sí mesmo que concede um bônus de +1 em todas as suas rolagens. Todos os seus aliados que estiverem à uma distância em metros de você igual à sua Determinação quando você desenha este Selo também são afetados por ele. Esse Selo Místico dura 1 minuto.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 116,
+      "name": "Abençoar Objeto",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Graça Divina",
+      "mana": 10,
+      "difficulty": 8,
+      "description": "Você desenha um Selo Místico sobre uma arma ou armadura. Uma arma abençoada causa +6 de dano contra demônios, mortos-vivos e espíritos, além de atingir criaturas incorpóreas como se elas não tivessem a Habilidade Corpo Intangível. Em uma armadura, qualquer demônio, morto-vivo ou espírito que tocá-la (incluindo com ataques desarmados) perde imediatamente 6 Pontos de Vida – e perde 6 Pontos de vida a cada turno que comece em contato com a armadura. Esse Selo Místico dura 1 hora.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 117,
+      "name": "Aparar Magia",
+      "type": "Reação",
+      "category": "Habilidade (Técnica)",
+      "requirement": "Detectar Magia",
+      "mana": 5,
+      "difficulty": null,
+      "description": "Sempre que for alvo de uma magia que cause dano ou perda de vida, você pode reduzir aquele dano ou perda de vida pela metade. Essa Habilidade não afeta quaisquer outros efeitos da magia além de dano ou perda de vida. Especial: Se você tiver Resistência ao tipo de dano que a magia causa, você não sofre dano e evita qualquer outro efeito da magia.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 118,
+      "name": "Asas Celestiais",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Caminhada Mágica",
+      "mana": 20,
+      "difficulty": 10,
+      "description": "Desenhando um Selo Místico sobre uma criatura viva, você faz surgir em suas costas um grande par de asas. O alvo ganha a Habilidade Asas Pesadas. Esse Selo Místico dura por 1 Hora.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 119,
+      "name": "Asceta",
+      "type": "Suporte",
+      "category": "Habilidade (Característica)",
+      "requirement": null,
+      "mana": null,
+      "difficulty": null,
+      "description": "Você rola +1 em todos os seus testes envolvendo magias (incluindo conjurá-las) e conhecimento. Além disso, todas as suas magias de Cura recuperam 5 Pontos de Vida a mais.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 120,
+      "name": "Aura de Cura 1",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Curar Ferimentos 1",
+      "mana": 15,
+      "difficulty": 11,
+      "description": "Você desenha um Selo Místico sobre sí mesmo que recupera 10 Pontos de Vida. Todas as criaturas vivas que estiverem à uma distância em metros de você igual à sua Determinação quando você desenha este selo também são afetados por ele. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 121,
+      "name": "Caminhada Mágica",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": 9,
+      "description": "Desenhando um Selo Místico sobre uma criatura viva, você permite que ela possa caminhar sobre qualquer tipo de superfície (incluindo líquidos), paredes ou teto e não sofre nenhum tipo de redutor ou penalidade de movimentação por terrenos difíceis ou acidentados. Finalmente, o alvo pode escolher à vontade se vai deixar rastros ou não enquanto esta runa estiver ativa sobre ele. Esse Selo Místico dura 1 hora.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 122,
+      "name": "Cariátide",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": "Variável",
+      "difficulty": 12,
+      "description": "Você pode dar movimentos para uma estátua desenhando um Selo Místico sobre ela. O custo da magia depende do tamanho da estátua: 20 Pontos de Mana para uma estátua pequena, 40 Pontos de Mana para uma estátua média e 80 Pontos de Mana para uma estátua grande. A estátua terá as características de um Golem do material e tamanho apropriados. Esse Selo Místico dura 1 Minuto. Veja os dados dos Golens no Monstrum Codex: Construtos para mais detalhes.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 123,
+      "name": "Conjurar Arma dos Deuses",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Dogma",
+      "mana": 20,
+      "difficulty": 10,
+      "description": "Você desenha um Selo Místico no ar que se materializa na forma da arma favorecida pela sua divindade (consulte a lista de Dogmas na página 143 para ver a arma de sua divindade). O Selo Místico que conjura a arma se dissipa após 1 minuto, mas se você soltar a arma ele se dissipa imediatamente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 124,
+      "name": "Conjurar Lança do Destino",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Exorcismo",
+      "mana": 15,
+      "difficulty": 10,
+      "description": "Você desenha um Selo Místico no ar que assume a forma de uma lança de luz. A lança arremete na direção de um alvo que você possa ver e causa dano igual a 10/Perfuração. Se a criatura for um demônio, morto-vivo ou espírito a lança causa o dobro do dano. Após atingir o alvo a lança se dissipa em uma explosão de luz, e o alvo precisa fazer um teste de Vontade (Dif. sua Determinação) ou fica Distraído por 1 turno (ver Condições, pág. 169). Demônios, mortos-vivos ou espíritos não têm direito ao teste para evitar ficarem Distraídos. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 125,
+      "name": "Conjurar Broquel Místico",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 10,
+      "difficulty": 10,
+      "description": "Você desenha um Selo Místico sobre uma criatura que se materializa na forma de um escudo que flutua ao redor do alvo defletindo ataques, mas pode ser segurado como um escudo normal. Ele garante Esquiva +2, e se for segurado tem FN 2, ocupa 1 mão e seu bônus passa a ser de Bloqueio. Esse Selo Místico dura 1 minuto.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 126,
+      "name": "Corpo Fechado",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Proteção Mística",
+      "mana": 20,
+      "difficulty": 12,
+      "description": "Desenhando um Selo Místico sobre um alvo, você confere Resistência à Contusão, Corte ou Perfuração a ele. Esse Selo Místico dura por 1 minuto.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 127,
+      "name": "Curar Ferimentos 1",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 5,
+      "difficulty": 8,
+      "description": "Desenhando um Selo Místico sobre uma criatura viva que recupera imediatamente 10 Pontos de Vida. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 128,
+      "name": "Detectar Magia",
+      "type": "Ação",
+      "category": "Habilidade (Técnica)",
+      "requirement": null,
+      "mana": 0,
+      "difficulty": 8,
+      "description": "Você pode enxergar a aura de objetos mágicos, Runas Arcanas e Selos Místicos. Você pode analisar a aura mágica de um Selo, Runa ou objeto para entender suas propriedades observando-a por 1 minuto.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 129,
+      "name": "Dogma",
+      "type": "Suporte",
+      "category": "Habilidade",
+      "requirement": null,
+      "mana": 0,
+      "difficulty": 0,
+      "description": "Escolha um Dogma para seguir. Essa escolha é permanente e não pode ser mudada posteriormente. Veja a descrição dos Dogmas no final desse capítulo.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 130,
+      "name": "Exorcismo",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 20,
+      "difficulty": 11,
+      "description": "Você expurga os mortos-vivos, demônios e espíritos que estiverem a um raio em metros igual à sua Determinação ao seu redor, eles perdem 10 Pontos de Vida e 10 Pontos de Mana. Se tiverem Mente Vazia perdem todos os seus Pontos de Vida e Mana imediatamente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 131,
+      "name": "Graça Divina",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 5,
+      "difficulty": 8,
+      "description": "Desenhando um Selo Místico sobre uma criatura viva, você imbui ela com a graça de sua Divindade. O alvo recebe +1 em todas as suas rolagens. Este Selo Místico dura por 1 minuto.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 132,
+      "name": "Proteção Mística",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Toque Místico",
+      "mana": 10,
+      "difficulty": 10,
+      "description": "Desenhando um Selo Divino sobre uma criatura viva, você à deixa imune a todos os efeitos mentais, efeitos de Medo, e Ilusões. Este Selo dura uma quantidade de horas igual à Vontade do conjurador.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 133,
+      "name": "Purgar",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Curar Ferimentos 1",
+      "mana": 10,
+      "difficulty": 10,
+      "description": "Você os purifica de impurezas mundanas. Qualquer veneno ou agente infeccioso de origem natural afetado por essa magia se torna água pura e límpida, incluindo substâncias que estiverem em alimentos ou bebidas. Criaturas afetadas são curadas de venenos, doenças, infecções de origem natural e também de quaisquer efeitos de sangramento. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 134,
+      "name": "Toque Místico",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": null,
+      "mana": 20,
+      "difficulty": 10,
+      "description": "Você a infunde um alvo com uma inspiração momentânea. Se o alvo usar uma Habilidade com Custo de Mana igual ou menor a 30, ele não gasta nenhum Ponto de Mana. Essa magia não pode ser usada sobre você mesmo. Este Selo Místico dura até o final do próximo turno do alvo, mas se ele gastar Pontos de Mana antes disso, o Selo se dissipa imediatamente.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    },
+    {
+      "id": 135,
+      "name": "Velocidade",
+      "type": "Ação",
+      "category": "Habilidade (Magia)",
+      "requirement": "Caminhada Mágica",
+      "mana": 20,
+      "difficulty": 11,
+      "description": "Desenhando um Selo Místico sobre uma criatura viva você aumenta a velocidade dela, deixando-a com o dobro do Deslocamento e de ações. Este Selo Místico se dissipa no final do próximo turno do alvo.",
+      "associations": {
+        "raceId": null,
+        "vocationId": 5
+      }
+    }
+  ]
+}

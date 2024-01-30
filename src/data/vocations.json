@@ -1,0 +1,76 @@
+{
+  "vocations": [
+    {
+      "id": 0,
+      "name": "Feiticeiro",
+      "description": "Feiticeiros são conjuradores especializados na manipulação das formas mais básicas de energia: calor e eletricidade. São capazes de produzir quantidades imensas de calor, literalmente criando fogo a partir de suas mãos, de remover o calor do ambiente, criando colunas e paredes de gelo a partir do congelamento do próprio ar, ou gerar energia elétrica suficiente para projetar poderosas descargas de eletricidade. Apesar de possuírem um domínio considerável sobre a teoria geral da magia arcana, os Feiticeiros focam seus esforços no domínio e manipulação dessas energias brutas, geralmente para fins combativos. Muitos Feiticeiros ocupam posições em exércitos ou guardas organizadas, às vezes na linha de frente, às vezes como conselheiros ou em posições de liderança. Em geral, aqueles que decidem seguir o aprendizado de Feiticeiro são pessoas com sede de aventura ou de poder, o que geralmente lhes rende bons frutos em organizações com cadeias de comando bem estruturadas.",
+      "attributeBonus": {
+        "strength": 0,
+        "agility": 0,
+        "intelligence": 1,
+        "will": 1
+      },
+      "automaticSkillId": 6
+    },
+    {
+      "id": 1,
+      "name": "Guerreiro",
+      "description": "Guerreiros são, de longe, a Classe mais comum de ser encontrada entre os combatentes de Drakon. Em um ambiente rico em metais e mão-de-obra especializada para fabricar armas e armaduras eficientes e com uma quantidade considerável de atritos entre reinos e ameaças palpáveis, os Guerreiros encontram um ambiente fértil para se desenvolverem. De fato, a maioria das cidades mantém um pequeno contingente de guardas, treinado no uso de armaduras pesadas, escudos e armas corporais e a maioria dos reinos de Cassiopéia mantém um exército permanente de combatentes especializados para lidarem com invasões e fazer frente aos ataques de nações hostis. Além disso, muitas companhias de mercenários treinam e mantêm um bom número de guerreiros a soldo, prontos para empreenderem todo tipo de conflito armado. Finalmente, histórias de aldeões obrigados a pegarem em armas para defenderem seus lares contra bandidos ou, em alguns casos, monstros e que acabam por seguir nos caminhos dos homens de armas são relativamente comuns em Drakon. Considerando a abundância de minérios em Cassiopéia, mesmo um guerreiro com pouco treinamento pode sobreviver no caminho da guerra, comprando armas e equipamentos adequados de proteção. Graças a isso, os exércitos, guardas e companhias de mercenários costumam manter seus homens bem equipados, e a profissão de Guerreiro é vista como digna e estável, fazendo com que muitos escolham segui-la em busca de glória e fama apesar de poucos conseguirem tais distinções. Apesar das guardas e exércitos não pagarem muito bem, elas oferecem alojamento, alimentação e manutenção de armas, armaduras e equipamentos necessários para o cumprimento do dever, enquanto companhias mercenárias pagam mais, mas apresentam riscos bem maiores já que costumam ser procuradas para resolver problemas difíceis, geralmente envolvendo monstros, ou para engrossar as linhas de frente dos exércitos, no caso de conflitos em larga escala.",
+      "attributeBonus": {
+        "strength": 1,
+        "agility": 1,
+        "intelligence": 0,
+        "will": 0
+      },
+      "automaticSkillId": 7
+    },
+    {
+      "id": 2,
+      "name": "Ladino",
+      "description": "Ladinos são especialistas em atingir seus objetivos por qualquer meio necessário. Seja através de subterfúgios, truques, manipulação, contatos ou mesmo meios criminosos, os Ladinos sempre conseguem o que querem e os bons Ladinos conseguem fazer isso e viver para contar a história! Apesar de muitos verem os Ladinos com desconfiança, muitas vezes considerando seus meios pouco honrados ou mesmo vis, a grande maioria dos Ladinos de Cassiopéia atua ao lado da lei. Eles costumam trabalhar como batedores, espiões, investigadores e exploradores. Eles auxiliam ordens militares com informações sobre movimentos de tropas inimigas e obtendo informações secretas ou plantando informações falsas, usam suas redes de contatos para descobrir criminosos ou apurar veracidade de informações e são particularmente apreciados em exploração de ruínas e tumbas (particularmente comuns em Tebryn e nas Terras Secas, onde grandes civilizações ergueram imensos complexos que foram devastados ao logo dos séculos, durante a Revoada dos Dragões e o Expurgo) e na invasão de cavernas e complexos subterrâneos habitados por raças ou monstros hostis. Muitos Ladinos também trabalham como marinheiros, piratas e corsários, assim como os Espadachins. Eles podem ser combatentes eficientes em condições onde agilidade, velocidade e versatilidade são mais importantes do que simples proeza marcial, como no convés de um navio. É claro, muitos Ladinos usam seus conhecimentos e aptidões para cometer crimes. Além de um bom número de piratas, Ladinos são conhecidos por engrossarem bastante as fileiras de ladrões, embusteiros, atravessadores e traficantes de toda Cassiopéia.",
+      "attributeBonus": {
+        "strength": 0,
+        "agility": 1,
+        "intelligence": 1,
+        "will": 0
+      },
+      "automaticSkillId": 8
+    },
+    {
+      "id": 3,
+      "name": "Paladino",
+      "description": "O Paladino é um guerreiro movido por um conjunto de códigos de conduta que usa para disciplinar seu espírito e realizar feitos que muitos veriam como sobrenaturais. A maioria dos Códigos de um Paladino são autoimpostos; regras de conduta sob as quais ele escolhe viver considerando que são o único caminho realmente digno de existir ou para expiar algum grande erro que cometeu e não deseja jamais repetir. Alguns, no entanto, carregam códigos impostos por forças externas, como dogmas espirituais determinados por uma crença da qual ele comunga ou princípios sob os quais o Paladino deve viver por fazer parte de uma ordem. De toda forma, esses Códigos exigem uma grande disciplina para serem observados completamente a cada momento, o que fortalece grandemente à vontade e o espírito do Paladino no processo. Alguns Paladinos vivem sob um único Código, estando ligados apenas a uma obrigação específica, enquanto outros adotam vários Códigos em uma tentativa de se aperfeiçoar e se tornar cada vez mais puros, dignos ou simplesmente por possuírem uma índole que naturalmente os leva em direção a eles. Não há limites para o número de Códigos que cada Paladino pode possuir, mas obviamente, quanto mais Códigos um Paladino precisa observar, mais limitado ele fica em relação aos rumos que pode tomar diante de uma determinada situação e alguns deles podem gerar conflitos (por exemplo, um Paladino com o Código da Honestidade e o Código da Coragem diante de uma situação em que apenas uma mentira poderia salvar a vida de um indefeso) o que pode quebrar o espírito de um Paladino permanentemente, caso não consiga seguir os ditames de um ou mais de seus Códigos. Apesar de todos os Paladinos serem, obviamente, honrados, isso não significa que não possam ser malignos. Tiranos que impões sua força sobre os mais fracos podem perfeitamente seguir o Código da Lealdade, estando cercado de impiedosos (e fiéis) aliados, e guerreiros sanguinários que seguem estritamente o Código da Coragem são inimigos absolutamente terríveis no campo de batalha. Mas, é claro, estas são exceções à regra. Em geral, Paladinos são heróis que lutam pela manutenção do Status Quo, pela defesa dos inocentes e pela manutenção das leis. Muitas ordens de Paladinos exigem que seus membros observem obrigatoriamente um Código específico, ao menos todos os Paladinos da Ordem da Espada de Mirah precisam seguir o Código da Justiça, e a Hoste de Hadorn é formada por Paladinos que seguem o Código da Coragem e a observação desses Códigos é ostensivamente ensinada aos escudeiros que desejam ingressar na Ordem, enquanto outras são mais flexíveis os Paladinos da Mão Ígnea precisam seguir o Código da Honestidade ou o Código da Lealdade e os Faris exigem que seus membros sigam o Código da Cortesia ou o Código da Lealdade, apesar deles comumente seguirem ambos e são, geralmente, menos severos em suas doutrinas.",
+      "attributeBonus": {
+        "strength": 1,
+        "agility": 0,
+        "intelligence": 0,
+        "will": 1
+      },
+      "automaticSkillId": 9
+    },
+    {
+      "id": 4,
+      "name": "Patrulheiro",
+      "description": "Patrulheiros são uma classe versátil, que atua em vários campos diferentes. Apesar da maioria dela ser composta por caçadores, rastreadores e guardiões de áreas florestais, muitos Patrulheiros são arqueiros de exércitos ou milícias, exploradores de regiões remotas, caçadores de recompensas e domadores de animais. A maioria dos Patrulheiros está intrinsecamente ligada às regiões selvagens, preferindo atuar em florestas, pântanos, bosques, selvas e regiões montanhosas, onde podem usar o ambiente para abater presas à distância, montar armadilhas com facilidade e rastrear de modo eficiente. De fato, muitos Patrulheiros não gostam das regiões urbanas, com gente demais, cheiros demais, rastros demais e regras demais. A liberdade das regiões florestais geralmente faz parte de um Patrulheiro tanto quanto um bom arco, e a grande maioria deles possui uma profunda ligação com a natureza, geralmente de forma reverente. No entanto, por mais que essa seja a regra, há uma boa quantidade de exceções. Patrulheiros podem ser encontrados em cidades, trabalhando como caçadores de recompensa, dedicando-se a caçar criminosos ao invés de criaturas selvagens ou como guardas e vigias, com suas habilidades focadas em percepção e uso de arcos. Além disso, muitos Patrulheiros concentram seu treinamento apenas no manejo do arco e ingressam nas linhas de arqueiros de exércitos, milícias ou companhias mercenárias. Enquanto Druidas geralmente usam Companheiros Animais como sentinelas e vigias, e Xamãs geralmente possuem ligações quase familiares com seus Companheiros Animais, a maioria dos Patrulheiros usa essas criaturas como uma ferramenta. Muitos, claro, criam poderosos vínculos afetivos com seus Companheiros, e podem manter um mesmo Companheiro Animal por muitos anos. A maioria, porém, possui Companheiros Animais por curtos períodos de tempo, geralmente pela duração de uma tarefa, devolvendo-o à natureza depois disso. Em áreas selvagens que não conhecem bem o bastante, é comum que um Patrulheiro convoque uma criatura da região para lhe servir como guia, enquanto caçadores de recompensa geralmente usam Companheiros Animais para obter informações de seus alvos ao planejar a captura. Muitos convocam Companheiros Animais para apenas uma tarefa, como um pássaro para lhe fornecer informações sobre uma área, um animal de hábitos noturnos para servir de vigia por uma noite ou um animal de montaria para levá-lo a um determinado destino, e alguns Patrulheiros menos escrupulosos usam predadores para auxiliá-los em combates mais perigosos. A maioria dos Patrulheiros, no entanto, prefere não envolver animais em tarefas perigosas, dado seu profundo respeito pela natureza. É comum, também, que um Patrulheiro mantenha um Companheiro Animal por mais tempo se dedicar-se a uma mesma tarefa com frequência. Caçadores muitas vezes estão acompanhados de lobos ou águias, enquanto guardas e vigias costumam ter corujas, morcegos e felinos ao seu lado, e a maioria dos caçadores de recompensa usa cães e ratazanas para seguir seus alvos. Muitos acabam se afeiçoando a esses animais, e os mantém por perto mesmo quando sua tarefa foi cumprida, quase como animais de estimação. Além disso, muitos Patrulheiros mantêm animais de montaria como Companheiro Animal, o que lhes garante um meio rápido e seguro de transporte em uma emergência.",
+      "attributeBonus": {
+        "strength": 0,
+        "agility": 1,
+        "intelligence": 1,
+        "will": 0
+      },
+      "automaticSkillId": 10
+    },
+    {
+      "id": 5,
+      "name": "Sacerdote",
+      "description": "Sacerdotes são seguidores e protetores de uma divindade ou panteão, cuja fé é tão intensa que eles são capazes de canalizar parte do poder de sua divindade patrona na forma de magias. A grande maioria dos Sacerdotes dedica suas vidas ao estudo e proteção de sua fé, à manutenção dos templos de sua divindade patrona, ao estudo de suas escrituras sagradas, comungando com outros professantes da mesma fé ou transmitindo seus conhecimentos para outros membros da comunidade onde habitam. A maioria deles, ainda, exerce alguma função na comunidade de acordo com as doutrinas de sua divindade: Sacerdotes de Mirah muitas vezes ocupam cargos de juízes ou conselheiros de burgomestres ou mesmo monarcas, Sacerdotes de Ellenis geralmente auxiliam os fazendeiros e caçadores em suas funções, Sacerdotes de Denalla costumam trabalhar como parteiros ou curandeiros, Sacerdotes de Sarfion trabalham em bibliotecas, escolas ou como conselheiros civis, Sacerdotes de Hadorn aconselham generais e costumam acompanhar tropas em conflitos tanto como médicos de fronte quanto como combatentes, Sacerdotes de Ran e Taranis muitas vezes embarcam em navios (tanto de guerra quanto de comércio ou mesmo de pesca) para proteger e aconselhar a tripulação, Sacerdotes de Hou podem ser encontrados em guildas de ferreiros realizando funções como artesões ou tesoureiros e Sacerdotes de Ahrogr podem tanto exercer funções de aconselhamento em assuntos civis ou militares como exercer funções de legisladores. Muitos Sacerdotes, no entanto, preferem uma vida mais autônoma, viajando constantemente para aumentar sua compreensão do mundo ao seu redor na tentativa de encontrar uma coesão entre as teorias que estudam e o reflexo prático delas no mundo.",
+      "attributeBonus": {
+        "strength": 0,
+        "agility": 0,
+        "intelligence": 1,
+        "will": 1
+      },
+      "automaticSkillId": 11
+    }
+  ]
+}
