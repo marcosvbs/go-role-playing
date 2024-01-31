@@ -7,4 +7,6 @@ export const defaultTheme = {
 
   "green-300": "#79A526",
   "green-400": "#496E22",
+
+  "low-opacity-gray": "#C3BFB820",
 };
