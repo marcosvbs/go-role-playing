@@ -1,4 +1,4 @@
-import { ContainedButton } from "../../components/ContainedButton";
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { HomeContainer } from "./styles";
 
@@ -15,7 +15,7 @@ export function Home() {
             desenvolverem seus personagens de maneira intuitiva, dentro das
             regras do sistema Mighty Blade.
           </p>
-          <ContainedButton label={"Criar personagem"} />
+          <Button label={"Criar personagem"} type={"contained"} />
         </div>
       </HomeContainer>
     </>
