@@ -1,0 +1,49 @@
+{
+  "consumables": [
+    {
+      "id": 0,
+      "name": "Poção Antidoto",
+      "type": "consumables",
+      "weight": 0.12,
+      "cost": 25,
+      "aura": "Nula",
+      "description": "Anula os efeitos de qualquer veneno natural."
+    },
+    {
+      "id": 1,
+      "name": "Poção da Explosão",
+      "type": "consumables",
+      "weight": 0.12,
+      "cost": 200,
+      "aura": "Fraca",
+      "description": "Se este frasco romper, causa 10/fogo de dano em tudo e todos que estiverem a até 3 metros de distância."
+    },
+    {
+      "id": 2,
+      "name": "Poção da Restauração",
+      "type": "consumables",
+      "weight": 0.12,
+      "cost": 120,
+      "aura": "Nula",
+      "description": "Recupera 30 Pontos de Vida e 30 Pontos de Mana."
+    },
+    {
+      "id": 3,
+      "name": "Poção de Mana",
+      "type": "consumables",
+      "weight": 0.12,
+      "cost": 100,
+      "aura": "Nula",
+      "description": "Recupera 30 Pontos de Mana."
+    },
+    {
+      "id": 4,
+      "name": "Poção de Vida",
+      "type": "consumables",
+      "weight": 0.12,
+      "cost": 50,
+      "aura": "Nula",
+      "description": "Recupera 30 Pontos de Vida."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "armor": [
+    {
+      "id": 0,
+      "name": "Armadura de Couro",
+      "type": "armor",
+      "cost": 100,
+      "defense": 2,
+      "strengthRequired": 2,
+      "observation": null
+    },
+    {
+      "id": 1,
+      "name": "Armadura Simples",
+      "type": "armor",
+      "cost": 200,
+      "defense": 3,
+      "strengthRequired": 4,
+      "observation": "Pesada"
+    },
+    {
+      "id": 2,
+      "name": "Armadura de Batalha",
+      "type": "armor",
+      "cost": 600,
+      "defense": 4,
+      "strengthRequired": 6,
+      "observation": "Pesada"
+    },
+    {
+      "id": 3,
+      "name": "Escudo",
+      "type": "armor",
+      "cost": 100,
+      "defense": "+2",
+      "strengthRequired": 3,
+      "observation": "Ocupa uma mão"
+    }
+  ]
+}

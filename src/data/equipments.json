@@ -1,0 +1,331 @@
+{
+  "equipments": [
+    {
+      "id": 0,
+      "name": "Alforge",
+      "cost": 50,
+      "weight": 1,
+      "description": "Mochila acoplada na parte de traz na sela da montaria. Comporta até 40 quilos de equipamento."
+    },
+    {
+      "id": 1,
+      "name": "Aljava Comum",
+      "cost": 10,
+      "weight": 1.5,
+      "description": "Utensilio usado normalmente nas costas para carregar flechas. Comporta até 20 flechas (compradas separadamente)."
+    },
+    {
+      "id": 2,
+      "name": "Barril",
+      "cost": 10,
+      "weight": 20,
+      "description": "Barril de madeira para líquidos. Comporta 50 litros de líquido."
+    },
+    {
+      "id": 3,
+      "name": "Barrilete",
+      "cost": 5,
+      "weight": 6,
+      "description": "Barril de madeira para líquidos. Comporta 10 litros de líquido."
+    },
+    {
+      "id": 4,
+      "name": "Baú Pequeno",
+      "cost": 30,
+      "weight": 20,
+      "description": "Baú de madeira reforçado."
+    },
+    {
+      "id": 5,
+      "name": "Baú Grande",
+      "cost": 50,
+      "weight": 60,
+      "description": "Baú de madeira reforçado. Com alça para cadeado. 1 m de largura, 50 cm de profundidade e 50 cm de altura."
+    },
+    {
+      "id": 6,
+      "name": "Cantil",
+      "cost": 5,
+      "weight": 0.5,
+      "description": "Recipiente para carregar líquidos feito com couro e armação de madeira e/ou metal. Mais fácil de carregar do que o odre. Cheio de líquido pesa 1kg a mais."
+    },
+    {
+      "id": 7,
+      "name": "Capa de lã",
+      "cost": 3,
+      "weight": 1,
+      "description": "Para proteger do frio."
+    },
+    {
+      "id": 8,
+      "name": "Capa de pele",
+      "cost": 10,
+      "weight": 3,
+      "description": "Para climas muito frios."
+    },
+    {
+      "id": 9,
+      "name": "Carroça",
+      "cost": 150,
+      "description": "Carroças são normalmente usadas para transportar pessoas, além do banco frontal, na parte interna ela tem mais dois bancos. Capaz de transportar 8 pessoas. Deve ser puxada por dois cavalos."
+    },
+    {
+      "id": 10,
+      "name": "Cavalo Comum",
+      "cost": 150,
+      "description": "Versão treinada do cavalo descrito no Monstrum Codex p. 9"
+    },
+    {
+      "id": 11,
+      "name": "Chapéu",
+      "cost": 3,
+      "weight": 0.5,
+      "description": "De palha, couro ou lona."
+    },
+    {
+      "id": 12,
+      "name": "Cinto oculto",
+      "cost": 1,
+      "weight": 0.15,
+      "description": "Cinto para adaga pode ser colocado na coxa ou no braço"
+    },
+    {
+      "id": 13,
+      "name": "Cinturão de Adagas",
+      "cost": 3,
+      "weight": 0.25,
+      "description": "Cinto para o peito com espaço para 10 adagas"
+    },
+    {
+      "id": 14,
+      "name": "Cinto de Ferramentas",
+      "cost": 3,
+      "weight": 0.4,
+      "description": "Cinto com pequenos bolsos para guardar ferramentas e utensílios."
+    },
+    {
+      "id": 15,
+      "name": "Corda Grossa (15m)",
+      "cost": 6,
+      "weight": 3,
+      "description": "Corda reforçada aguenta 500 kg"
+    },
+    {
+      "id": 16,
+      "name": "Corda simples (15m)#",
+      "cost": 3,
+      "weight": 2,
+      "description": "Suporta 200 kg"
+    },
+    {
+      "id": 17,
+      "name": "Kit de Arrombamento",
+      "cost": 100,
+      "weight": 0.4,
+      "description": "Bainha com varias gazuas. Necessário para arrombar fechaduras."
+    },
+    {
+      "id": 18,
+      "name": "Kit de Cura",
+      "cost": 50,
+      "weight": 2,
+      "description": "Bandagens, agulha, linha, faca e pastas de ervas medicinais."
+    },
+    {
+      "id": 19,
+      "name": "Martelete#",
+      "cost": 24,
+      "weight": 1,
+      "description": "Pequeno martelo usado para fixar os pinos de escalada, a cabeça do martelo é dividida em uma ponta de martelo e outra de picareta."
+    },
+    {
+      "id": 20,
+      "name": "Mochila Pequena/embornal",
+      "cost": 20,
+      "weight": 1,
+      "description": "Mochila básica para guardar o essencial. Comporta até 5Kg."
+    },
+    {
+      "id": 21,
+      "name": "Mochila Grande",
+      "cost": 50,
+      "weight": 2,
+      "description": "Mochila reforçada de viagem. Comporta até 20 quilos."
+    },
+    {
+      "id": 22,
+      "name": "Frasco de Cerâmica",
+      "cost": 2,
+      "description": "Frasco de cerâmica para poções. Comporta 100 ml de líquido."
+    },
+    {
+      "id": 23,
+      "name": "Frasco de Tinta",
+      "cost": 15,
+      "description": "Suficiente pra dez páginas de texto"
+    },
+    {
+      "id": 24,
+      "name": "Freio, Rédeas e Bocal",
+      "cost": 20,
+      "weight": 0.45,
+      "description": "Consiste no equipamento que vai na cabeça do animal. O personagem recebe -2 nos testes de cavalgar se não possuir esse equipamento."
+    },
+    {
+      "id": 25,
+      "name": "Garatéia#",
+      "cost": 12,
+      "weight": 1,
+      "description": "Gancho para escalar muros e paredes."
+    },
+    {
+      "id": 26,
+      "name": "Garrafa de Cerâmica",
+      "cost": 5,
+      "weight": 0.5,
+      "description": "Garrafa para vinho e cerveja. Comporta 1 litro de líquido."
+    },
+    {
+      "id": 27,
+      "name": "Lampião",
+      "cost": 20,
+      "weight": 0.5,
+      "description": "Este lampião funciona a óleo. Dura 6 horas."
+    },
+    {
+      "id": 28,
+      "name": "Luvas",
+      "cost": 1,
+      "description": "De lã ou pelica, para proteger do frio."
+    },
+    {
+      "id": 29,
+      "name": "Luvas de Couro",
+      "cost": 3,
+      "weight": 0.5,
+      "description": "Para trabalho pesado ou climas muito frios."
+    },
+    {
+      "id": 30,
+      "name": "Manto",
+      "cost": 5,
+      "weight": 1,
+      "description": "Capa de lã ou lona com capuz, para proteger do frio."
+    },
+    {
+      "id": 31,
+      "name": "Mata Borrão",
+      "cost": 5,
+      "description": "Usado para limpar o excesso de tinta ajudando na secagem. Peso despresivel."
+    },
+    {
+      "id": 32,
+      "name": "Odre",
+      "cost": 2,
+      "weight": 0.5,
+      "description": "Cantil que consiste basicamente de um saco de couro com um bocal de madeira e rolha. Cheio de líquido pesa 4kg a mais."
+    },
+    {
+      "id": 33,
+      "name": "Óleo combustível",
+      "cost": 10,
+      "weight": 0.5,
+      "description": "Serve para recarregar lampiões. Se exposto ao fogo, explode (dano igual à 10/fogo em uma área de 2 metros de raio)"
+    },
+    {
+      "id": 34,
+      "name": "Pá de Acampamento",
+      "cost": 5,
+      "weight": 1,
+      "description": "Pá pequena para ajudar na montagem do acampamento"
+    },
+    {
+      "id": 35,
+      "name": "Papiro",
+      "cost": 1,
+      "description": "Uma folha. Papel de baixa qualidade feito a partir de uma pasta de junco seco. 100 dessas pesam 1kg"
+    },
+    {
+      "id": 36,
+      "name": "Pederneira e isqueiro",
+      "cost": 5,
+      "weight": 0.25,
+      "description": "Uma pedra especial que quando riscada por um metal (isqueiro) gera uma grande quantidade de faíscas. Usada para ascender uma fogueira."
+    },
+    {
+      "id": 37,
+      "name": "Pelego",
+      "cost": 10,
+      "weight": 4,
+      "description": "Couro com lã de ovelha para dormir em cima. Bom para noites frias."
+    },
+    {
+      "id": 38,
+      "name": "Pena",
+      "cost": 2,
+      "description": "Pena usada para escrever"
+    },
+    {
+      "id": 39,
+      "name": "Pergaminho",
+      "cost": 5,
+      "description": "Uma folha. Pele de cordeiro preparada para receber tinta. E desse material que os grimórios são feitos. 20 dessas pesam 1kg."
+    },
+    {
+      "id": 40,
+      "name": "Pinos Para escalada#",
+      "cost": 10,
+      "weight": 0.4,
+      "description": "10 pinos para escaladas."
+    },
+    {
+      "id": 41,
+      "name": "Provisões",
+      "cost": 10,
+      "weight": 1,
+      "description": "Suficiente para 2 refeições."
+    },
+    {
+      "id": 42,
+      "name": "Roupas comuns",
+      "cost": 5,
+      "weight": 1,
+      "description": "Camisa ou túnica, calções ou saia e sandálias."
+    },
+    {
+      "id": 43,
+      "name": "Roupas de viagem",
+      "cost": 20,
+      "weight": 3,
+      "description": "Camisa e calças de lona e botas."
+    },
+    {
+      "id": 44,
+      "name": "Sela e estribos",
+      "cost": 80,
+      "weight": 1,
+      "description": "Confere um bônus de +2 em todos os testes de Cavalgar."
+    },
+    {
+      "id": 45,
+      "name": "Tenda Pequena (Uma Pessoa)",
+      "cost": 35,
+      "weight": 3,
+      "description": "Tenda simples para uma pessoa, 1m de altura por 2m de comprimento e 1m de largura."
+    },
+    {
+      "id": 46,
+      "name": "Tenda Média (Duas Pessoas)",
+      "cost": 50,
+      "weight": 6,
+      "description": "Tenda simples para duas pessoas, 1m de altura por 2m de comprimento e 2m de largura."
+    },
+    {
+      "id": 47,
+      "name": "Tocha",
+      "cost": 1,
+      "weight": 0.5,
+      "description": "Dura uma hora"
+    }
+  ]
+}

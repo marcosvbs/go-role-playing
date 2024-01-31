@@ -1,0 +1,333 @@
+{
+  "weapons": [
+    {
+      "id": 0,
+      "name": "Soco, chute",
+      "type": "melee",
+      "cost": 0,
+      "damage": "For+0",
+      "attackType": "Contusão",
+      "strengthRequired": 1,
+      "weight": 0,
+      "range": "Corpo-a-corpo",
+      "observation": null
+    },
+    {
+      "id": 1,
+      "name": "Adaga",
+      "type": "melee",
+      "cost": 50,
+      "damage": "For+4",
+      "attackType": "Corte e Perf",
+      "strengthRequired": 1,
+      "weight": 0.25,
+      "range": "Corpo-a-corpo",
+      "observation": "Arremesso, Canalizador"
+    },
+    {
+      "id": 2,
+      "name": "Azagaia",
+      "type": "melee",
+      "cost": 50,
+      "damage": "For+5",
+      "attackType": "Perfuração",
+      "strengthRequired": 2,
+      "weight": 1,
+      "range": "Corpo-a-corpo",
+      "observation": "Arremesso"
+    },
+    {
+      "id": 3,
+      "name": "Bordão",
+      "type": "melee",
+      "cost": 50,
+      "damage": "For+5",
+      "attackType": "Contusão",
+      "strengthRequired": 1,
+      "weight": 2,
+      "range": "Corpo-a-corpo",
+      "observation": "Duas Mãos, Canalizador"
+    },
+    {
+      "id": 4,
+      "name": "Cimitarra",
+      "type": "melee",
+      "cost": 225,
+      "damage": "For+9",
+      "attackType": "Corte e Perf",
+      "strengthRequired": 5,
+      "weight": 2.5,
+      "range": "Corpo-a-corpo",
+      "observation": null
+    },
+    {
+      "id": 5,
+      "name": "Clava",
+      "type": "melee",
+      "cost": 75,
+      "damage": "For+6",
+      "attackType": "Contusão",
+      "strengthRequired": 3,
+      "weight": 1.5,
+      "range": "Corpo-a-corpo",
+      "observation": "Canalizador"
+    },
+    {
+      "id": 6,
+      "name": "Espada curta",
+      "type": "melee",
+      "cost": 100,
+      "damage": "For+6",
+      "attackType": "Corte e Perf",
+      "strengthRequired": 2,
+      "weight": 1,
+      "range": "Corpo-a-corpo",
+      "observation": null
+    },
+    {
+      "id": 7,
+      "name": "Espada Longa",
+      "type": "melee",
+      "cost": 175,
+      "damage": "For+8",
+      "attackType": "Corte e Perf",
+      "strengthRequired": 4,
+      "weight": 2,
+      "range": "Corpo-a-corpo",
+      "observation": null
+    },
+    {
+      "id": 8,
+      "name": "Lança",
+      "type": "melee",
+      "cost": 100,
+      "damage": "For+7",
+      "attackType": "Perfuração",
+      "strengthRequired": 3,
+      "weight": 2,
+      "range": "Haste",
+      "observation": "Duas Mãos, Arremesso"
+    },
+    {
+      "id": 9,
+      "name": "Maça Pesada",
+      "type": "melee",
+      "cost": 150,
+      "damage": "For+8",
+      "attackType": "Contusão",
+      "strengthRequired": 5,
+      "weight": 2.5,
+      "range": "Corpo-a-corpo",
+      "observation": null
+    },
+    {
+      "id": 10,
+      "name": "Machadinha",
+      "type": "melee",
+      "cost": 100,
+      "damage": "For+6",
+      "attackType": "Corte",
+      "strengthRequired": 2,
+      "weight": 1,
+      "range": "Corpo-a-corpo",
+      "observation": "Arremesso"
+    },
+    {
+      "id": 11,
+      "name": "Machado de Batalha",
+      "type": "melee",
+      "cost": 150,
+      "damage": "For+8",
+      "attackType": "Corte",
+      "strengthRequired": 5,
+      "weight": 3,
+      "range": "Corpo-a-corpo",
+      "observation": null
+    },
+    {
+      "id": 12,
+      "name": "Machado Pesado",
+      "type": "melee",
+      "cost": 175,
+      "damage": "For+11",
+      "attackType": "Corte",
+      "strengthRequired": 5,
+      "weight": 4,
+      "range": "Corpo-a-corpo Duas Mãos",
+      "observation": null
+    },
+    {
+      "id": 13,
+      "name": "Martelo de guerra",
+      "type": "melee",
+      "cost": 175,
+      "damage": "For+8",
+      "attackType": "Cont e perf",
+      "strengthRequired": 4,
+      "weight": 3,
+      "range": "Corpo-a-corpo",
+      "observation": null
+    },
+    {
+      "id": 14,
+      "name": "Rapieira",
+      "type": "melee",
+      "cost": 125,
+      "damage": "For+7",
+      "attackType": "Perfuração",
+      "strengthRequired": 2,
+      "weight": 1,
+      "range": "Corpo-a-corpo",
+      "observation": null
+    },
+    {
+      "id": 15,
+      "name": "Arco Simples",
+      "type": "range",
+      "cost": 75,
+      "damage": "For+4",
+      "attackType": "Perfuração",
+      "strengthRequired": 2,
+      "range": "Médio",
+      "observation": "Duas Mãos"
+    },
+    {
+      "id": 16,
+      "name": "Arco Composto",
+      "type": "range",
+      "cost": 175,
+      "damage": "For+6",
+      "attackType": "Perfuração",
+      "strengthRequired": 3,
+      "range": "Longo",
+      "observation": "Duas Mãos"
+    },
+    {
+      "id": 17,
+      "name": "Arco de Guerra",
+      "type": "range",
+      "cost": 250,
+      "damage": "For+8",
+      "attackType": "Perfuração",
+      "strengthRequired": 4,
+      "range": "Longo",
+      "observation": "Duas mãos"
+    },
+    {
+      "id": 18,
+      "name": "Arco Recurvo",
+      "type": "range",
+      "cost": 250,
+      "damage": "For+7",
+      "attackType": "Perfuração",
+      "strengthRequired": 2,
+      "range": "Longo",
+      "observation": "Duas mãos"
+    },
+    {
+      "id": 19,
+      "name": "Besta Leve",
+      "type": "range",
+      "cost": 175,
+      "damage": "10",
+      "attackType": "Perfuração",
+      "strengthRequired": 2,
+      "range": "Médio",
+      "observation": "Duas mãos, Carregar"
+    },
+    {
+      "id": 20,
+      "name": "Besta Pesada",
+      "type": "range",
+      "cost": 225,
+      "damage": "14",
+      "attackType": "Perfuração",
+      "strengthRequired": 5,
+      "range": "Médio",
+      "observation": "Duas Mãos, Carregar"
+    },
+    {
+      "id": 21,
+      "name": "Funda/Estilingue",
+      "type": "range",
+      "cost": 50,
+      "damage": "For+2",
+      "attackType": "Contusão",
+      "strengthRequired": 1,
+      "range": "Médio",
+      "observation": null
+    },
+    {
+      "id": 22,
+      "name": "Cajado",
+      "type": "conjuration",
+      "cost": 50,
+      "strengthRequired": 1,
+      "weight": 2,
+      "observation": "Cajados são simplesmente bordões sintonizados a um conjurador através de sua runa pessoal. Canalizador, Cerne Arcano, Cerne Místico, Registro, Duas Mãos"
+    },
+    {
+      "id": 23,
+      "name": "Cetro",
+      "type": "conjuration",
+      "cost": 75,
+      "strengthRequired": 3,
+      "weight": 1.5,
+      "observation": "Cetros são simplesmente clavas sintonizadas a um conjurador através de sua runa pessoal. Canalizador, Cerne Arcano, Cerne Místico, Registro"
+    },
+    {
+      "id": 24,
+      "name": "Grimório",
+      "type": "conjuration",
+      "cost": 50,
+      "strengthRequired": 2,
+      "weight": 0.5,
+      "observation": "Livro usado por conjuradores arcanos para registrar suas magias. Canalizador, Registro"
+    },
+    {
+      "id": 25,
+      "name": "Missal",
+      "type": "conjuration",
+      "cost": 50,
+      "strengthRequired": 2,
+      "weight": 0.5,
+      "observation": "Livro usado por conjuradores místicos para registrar suas magias. Canalizador; Registro"
+    },
+    {
+      "id": 26,
+      "name": "Orbe de Cristal",
+      "type": "conjuration",
+      "cost": 25,
+      "strengthRequired": 1,
+      "weight": 0.25,
+      "observation": "Um globo de cristal ou qualquer outra pedra semipreciosa com cerca de 20 cm de diâmetro. Canalizador, Foco Mágico"
+    },
+    {
+      "id": 27,
+      "name": "Punhal",
+      "type": "conjuration",
+      "cost": 50,
+      "strengthRequired": 1,
+      "weight": 0.25,
+      "observation": "Punhais são simplesmente adagas sintonizadas a um conjurador através de sua runa pessoal. Canalizador, Cerne Arcano"
+    },
+    {
+      "id": 28,
+      "name": "Símbolo Sagrado",
+      "type": "conjuration",
+      "cost": 25,
+      "strengthRequired": 1,
+      "weight": 0.1,
+      "observation": "Um medalhão com o símbolo de uma divindade. Canalizador, Cerne Místico"
+    },
+    {
+      "id": 29,
+      "name": "Varinha",
+      "type": "conjuration",
+      "cost": 25,
+      "strengthRequired": 1,
+      "weight": 0.15,
+      "observation": "Uma pequena haste com 25 a 40 centímetros de comprimento feito de madeira nobre. Canalizador, Asseste Mágico"
+    }
+  ]
+}
