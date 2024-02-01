@@ -1,6 +1,7 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Button = styled.a`
+const Link = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,9 +11,13 @@ const Button = styled.a`
   border-radius: 4px;
 
   cursor: pointer;
+
+  text-decoration: none;
+
+  color: ${(props) => props.theme.white};
 `;
 
-export const ContainedButton = styled(Button)`
+export const ContainedLink = styled(Link)`
   background-color: ${(props) => props.theme["green-400"]};
   border: 1px solid transparent;
 
@@ -21,7 +26,7 @@ export const ContainedButton = styled(Button)`
   }
 `;
 
-export const OutlinedButton = styled(Button)`
+export const OutlinedLink = styled(Link)`
   background-color: ${(props) => props.theme.black};
   border: 1px solid transparent;
 

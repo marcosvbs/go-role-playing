@@ -1,4 +1,4 @@
-import { Button } from "../../components/Button";
+import { Link } from "../../components/Link";
 import { Header } from "../../components/Header";
 import { HomeContainer } from "./styles";
 
@@ -15,7 +15,11 @@ export function Home() {
             desenvolverem seus personagens de maneira intuitiva, dentro das
             regras do sistema Mighty Blade.
           </p>
-          <Button label={"Criar personagem"} type={"contained"} />
+          <Link
+            label={"Criar personagem"}
+            type={"contained"}
+            destination={"/race-selection"}
+          />
         </div>
       </HomeContainer>
     </>

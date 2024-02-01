@@ -1,11 +1,16 @@
-import { Button } from "../Button";
+import { Link } from "../Link";
 import { NavigationBarContainer } from "./styles";
 
-export function NavigationBar() {
+interface NavigationBarProps {
+  previousPage: string;
+  nextPage: string;
+}
+
+export function NavigationBar({ previousPage, nextPage }: NavigationBarProps) {
   return (
     <NavigationBarContainer>
-      <Button label={"Voltar"} type={"outlined"} />
-      <Button label={"Continuar"} type={"contained"} />
+      <Link label={"Voltar"} type={"outlined"} destination={previousPage} />
+      <Link label={"Continuar"} type={"contained"} destination={nextPage} />
     </NavigationBarContainer>
   );
 }

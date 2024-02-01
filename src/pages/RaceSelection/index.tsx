@@ -8,7 +8,7 @@ export function RaceSelection() {
       <Header />
       <RaceSelectionContainer>
         <h3>Passo 1: Escolha sua raça</h3>
-        <NavigationBar />
+        <NavigationBar previousPage={"/"} nextPage={"/vocation-selection"} />
       </RaceSelectionContainer>
     </>
   );

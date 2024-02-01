@@ -1,14 +1,14 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
-import { RaceSelection } from "./pages/RaceSelection";
-// import { Home } from "./pages/Home";
-
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Router/Router";
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      {/* <Home /> */}
-      <RaceSelection />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
   );
