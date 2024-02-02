@@ -1,19 +1,55 @@
 import { createContext, useState } from "react";
 
 interface Equipment {
-  id: number;
+  name: string;
+  cost: number;
+  weight: number;
+  description: string;
   quantity: number;
+}
+
+interface Skill {
+  name: string;
+  type: string;
+  category: string;
+  requirement: string;
+  mana: number;
+  difficulty: number;
+  description: string;
 }
 
 interface Consumable {
-  id: number;
+  name: string;
+  weight: number;
+  cost: number;
+  aura: string;
   quantity: number;
 }
 
+interface Armor {
+  name: string;
+  cost: number;
+  defense: number;
+  strengthRequired: number;
+  observation: string;
+}
+
+interface Weapon {
+  name: string;
+  type: string;
+  cost: number;
+  damage: string;
+  attackType: string;
+  strengthRequired: number;
+  weight: number;
+  range: string;
+  observation: string;
+}
+
 interface CharacterSheetType {
-  name: string | null;
-  race: string | null | undefined;
-  vocation: string | null | undefined;
+  name: string;
+  race: string;
+  vocation: string;
   level: number;
   basicStatus: {
     life: number;
@@ -26,14 +62,14 @@ interface CharacterSheetType {
     intelligence: number;
     will: number;
   };
-  defence: {
+  defense: {
     block: number;
     dodge: number;
     determination: number;
   };
-  skills: number[] | null;
-  armor: number | null;
-  weapons: number[] | null;
+  skills: Skill[] | null;
+  armor: Armor | null;
+  weapons: Weapon[] | null;
   equipments: Equipment[] | null;
   consumables: Consumable[] | null;
 }
@@ -54,8 +90,8 @@ export function CharacterSheetContextProvider({
 }) {
   const [characterSheet, setCharacterSheet] = useState<CharacterSheetType>({
     name: "",
-    race: null,
-    vocation: null,
+    race: "",
+    vocation: "",
     level: 1,
     basicStatus: {
       life: 60,
@@ -68,16 +104,16 @@ export function CharacterSheetContextProvider({
       intelligence: 0,
       will: 0,
     },
-    defence: {
+    defense: {
       block: 0,
       dodge: 0,
       determination: 0,
     },
-    skills: [],
+    skills: null,
     armor: null,
-    weapons: [],
-    equipments: [],
-    consumables: [],
+    weapons: null,
+    equipments: null,
+    consumables: null,
   });
 
   function updateCharacterSheetRace(updatedCharacterSheet: CharacterSheetType) {

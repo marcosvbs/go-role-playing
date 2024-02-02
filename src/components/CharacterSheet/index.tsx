@@ -60,15 +60,15 @@ export function CharacterSheet() {
         <h5>Defesa</h5>
         <ul>
           <li>
-            <span>{characterSheet.defence.block}</span>
+            <span>{characterSheet.defense.block}</span>
             <span>Bloqueio</span>
           </li>
           <li>
-            <span>{characterSheet.defence.dodge}</span>
+            <span>{characterSheet.defense.dodge}</span>
             <span>Esquiva</span>
           </li>
           <li>
-            <span>{characterSheet.defence.determination}</span>
+            <span>{characterSheet.defense.determination}</span>
             <span>Determinação</span>
           </li>
         </ul>
@@ -83,23 +83,23 @@ export function CharacterSheet() {
             <th>Requer</th>
             <th>Mana</th>
             <th>Dificuldade</th>
-            {/* <th>Descrição</th> */}
           </tr>
-          <tr>
-            <td>Coração da Montanha</td>
-            <td>Suporte - Habilidade (Característica)</td>
-            <td>nenhum</td>
-            <td>0</td>
-            <td>nenhuma</td>
-            {/* <td>
-              Sua constituição foi forjada nos subterrâneos agrestes e
-              impiedosos, onde apenas os mais resistentes conseguem sobreviver.
-              Você é imune a todos os venenos naturais e mágicos e rola +1d6 em
-              testes para resistir à fadiga, doenças e quaisquer outros efeitos
-              físicos. Além disso, sua Carga é calculada como se você tivesse
-              Força +2.
-            </td> */}
-          </tr>
+
+          {characterSheet.skills ? (
+            characterSheet.skills?.map((skill) => (
+              <tr>
+                <td>{skill.name}</td>
+                <td>
+                  {skill.type} - {skill.category}
+                </td>
+                <td>{skill.requirement}</td>
+                <td>{skill.mana}</td>
+                <td>{skill.difficulty}</td>
+              </tr>
+            ))
+          ) : (
+            <></>
+          )}
         </table>
       </section>
 
@@ -112,15 +112,18 @@ export function CharacterSheet() {
             <th>Peso</th>
             <th>Descrição</th>
           </tr>
-          <tr>
-            <td>Alforge</td>
-            <td>50</td>
-            <td>1</td>
-            <td>
-              Mochila acoplada na parte de traz na sela da montaria. Comporta
-              até 40 quilos de equipamento.
-            </td>
-          </tr>
+          {characterSheet.equipments ? (
+            characterSheet.equipments?.map((equipment) => (
+              <tr>
+                <td>{equipment.name}</td>
+                <td>{equipment.cost}</td>
+                <td>{equipment.weight}</td>
+                <td>{equipment.description}</td>
+              </tr>
+            ))
+          ) : (
+            <></>
+          )}
         </table>
       </section>
 
@@ -134,13 +137,17 @@ export function CharacterSheet() {
             <th>Força necessária</th>
             <th>Observações</th>
           </tr>
-          <tr>
-            <td>Armadura de Couro</td>
-            <td>100</td>
-            <td>2</td>
-            <td>2</td>
-            <td>Pesada</td>
-          </tr>
+          {characterSheet.armor ? (
+            <tr>
+              <td>{characterSheet.armor.name}</td>
+              <td>{characterSheet.armor.cost}</td>
+              <td>{characterSheet.armor.defense}</td>
+              <td>{characterSheet.armor.strengthRequired}</td>
+              <td>{characterSheet.armor.observation}</td>
+            </tr>
+          ) : (
+            <></>
+          )}
         </table>
       </section>
 
@@ -154,17 +161,20 @@ export function CharacterSheet() {
             <th>Peso</th>
             <th>Observações</th>
           </tr>
-          <tr>
-            <td>Cetro</td>
-            <td>75</td>
-            <td>3</td>
-            <td>1.5</td>
-            <td>
-              Cetros são simplesmente clavas sintonizadas a um conjurador
-              através de sua runa pessoal. Canalizador, Cerne Arcano, Cerne
-              Místico, Registro
-            </td>
-          </tr>
+
+          {characterSheet.weapons ? (
+            characterSheet.weapons?.map((weapon) => (
+              <tr>
+                <td>{weapon.name}</td>
+                <td>{weapon.cost}</td>
+                <td>{weapon.strengthRequired}</td>
+                <td>{weapon.weight}</td>
+                <td>{weapon.observation}</td>
+              </tr>
+            ))
+          ) : (
+            <></>
+          )}
         </table>
       </section>
     </CharacterSheetContainer>
