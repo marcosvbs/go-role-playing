@@ -8,4 +8,8 @@ export const RaceSelectionContainer = styled.div`
   max-width: 880px;
 
   margin-top: 4rem;
+
+  h3 {
+    margin-bottom: 2.5rem;
+  }
 `;
