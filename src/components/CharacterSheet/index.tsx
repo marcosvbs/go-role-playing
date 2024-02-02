@@ -1,27 +1,33 @@
+import { useContext } from "react";
 import { CharacterSheetContainer } from "./styles";
+import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
 
 export function CharacterSheet() {
+  const { characterSheet } = useContext(CharacterSheetContext);
+
   return (
     <CharacterSheetContainer>
       <h4>Ficha do personagem</h4>
 
       <section className={"BasicInfoSection"}>
         <div className="BasicInfo">
-          <span>Anão - Paladino</span>
-          <span>Level 1</span>
+          <span>
+            {characterSheet.race} - {characterSheet.vocation}
+          </span>
+          <span>Nível {characterSheet.level}</span>
         </div>
         <div className="Status">
           <ul>
             <li>
-              <span>0</span>
+              <span>{characterSheet.basicStatus.life}</span>
               <span>Vida</span>
             </li>
             <li>
-              <span>0</span>
+              <span>{characterSheet.basicStatus.mana}</span>
               <span>Mana</span>
             </li>
             <li>
-              <span>0</span>
+              <span>{characterSheet.basicStatus.capacity}</span>
               <span>Capacidade</span>
             </li>
           </ul>
@@ -32,19 +38,19 @@ export function CharacterSheet() {
         <h5>Atributos</h5>
         <ul>
           <li>
-            <span>0</span>
+            <span>{characterSheet.attributes.strength}</span>
             <span>Força</span>
           </li>
           <li>
-            <span>0</span>
+            <span>{characterSheet.attributes.agility}</span>
             <span>Agilidade</span>
           </li>
           <li>
-            <span>0</span>
+            <span>{characterSheet.attributes.intelligence}</span>
             <span>Inteligencia</span>
           </li>
           <li>
-            <span>0</span>
+            <span>{characterSheet.attributes.will}</span>
             <span>Vontade</span>
           </li>
         </ul>
@@ -54,15 +60,15 @@ export function CharacterSheet() {
         <h5>Defesa</h5>
         <ul>
           <li>
-            <span>0</span>
+            <span>{characterSheet.defence.block}</span>
             <span>Bloqueio</span>
           </li>
           <li>
-            <span>0</span>
+            <span>{characterSheet.defence.dodge}</span>
             <span>Esquiva</span>
           </li>
           <li>
-            <span>0</span>
+            <span>{characterSheet.defence.determination}</span>
             <span>Determinação</span>
           </li>
         </ul>
