@@ -77,104 +77,118 @@ export function CharacterSheet() {
       <section className={"SkillsSection"}>
         <h5>Habilidades</h5>
         <table>
-          <tr>
-            <th>Nome</th>
-            <th>Tipo - Categoria</th>
-            <th>Requer</th>
-            <th>Mana</th>
-            <th>Dificuldade</th>
-          </tr>
-
-          {characterSheet.skills ? (
-            characterSheet.skills?.map((skill) => (
-              <tr>
-                <td>{skill.name}</td>
-                <td>
-                  {skill.type} - {skill.category}
-                </td>
-                <td>{skill.requirement}</td>
-                <td>{skill.mana}</td>
-                <td>{skill.difficulty}</td>
-              </tr>
-            ))
-          ) : (
-            <></>
-          )}
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Tipo - Categoria</th>
+              <th>Requer</th>
+              <th>Mana</th>
+              <th>Dificuldade</th>
+            </tr>
+          </thead>
+          <tbody>
+            {characterSheet.skills ? (
+              characterSheet.skills?.map((skill) => (
+                <tr key={skill.name}>
+                  <td>{skill.name}</td>
+                  <td>
+                    {skill.type} - {skill.category}
+                  </td>
+                  <td>{skill.requirement}</td>
+                  <td>{skill.mana}</td>
+                  <td>{skill.difficulty}</td>
+                </tr>
+              ))
+            ) : (
+              <></>
+            )}
+          </tbody>
         </table>
       </section>
 
       <section className={"EquipmentSection"}>
         <h5>Equipamentos</h5>
         <table>
-          <tr>
-            <th>Nome</th>
-            <th>Custo</th>
-            <th>Peso</th>
-            <th>Descrição</th>
-          </tr>
-          {characterSheet.equipments ? (
-            characterSheet.equipments?.map((equipment) => (
-              <tr>
-                <td>{equipment.name}</td>
-                <td>{equipment.cost}</td>
-                <td>{equipment.weight}</td>
-                <td>{equipment.description}</td>
-              </tr>
-            ))
-          ) : (
-            <></>
-          )}
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Custo</th>
+              <th>Peso</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            {characterSheet.equipments ? (
+              characterSheet.equipments?.map((equipment) => (
+                <tr key={equipment.name}>
+                  <td>{equipment.name}</td>
+                  <td>{equipment.cost}</td>
+                  <td>{equipment.weight}</td>
+                  <td>{equipment.description}</td>
+                </tr>
+              ))
+            ) : (
+              <></>
+            )}
+          </tbody>
         </table>
       </section>
 
       <section className={"ClassSection"}>
         <h5>Armadura</h5>
         <table>
-          <tr>
-            <th>Nome</th>
-            <th>Custo</th>
-            <th>Defesa</th>
-            <th>Força necessária</th>
-            <th>Observações</th>
-          </tr>
-          {characterSheet.armor ? (
+          <thead>
             <tr>
-              <td>{characterSheet.armor.name}</td>
-              <td>{characterSheet.armor.cost}</td>
-              <td>{characterSheet.armor.defense}</td>
-              <td>{characterSheet.armor.strengthRequired}</td>
-              <td>{characterSheet.armor.observation}</td>
+              <th>Nome</th>
+              <th>Custo</th>
+              <th>Defesa</th>
+              <th>Força necessária</th>
+              <th>Observações</th>
             </tr>
-          ) : (
-            <></>
-          )}
+          </thead>
+          <tbody>
+            {characterSheet.armor ? (
+              <tr>
+                <td>{characterSheet.armor.name}</td>
+                <td>{characterSheet.armor.cost}</td>
+                <td>{characterSheet.armor.defense}</td>
+                <td>{characterSheet.armor.strengthRequired}</td>
+                <td>{characterSheet.armor.observation}</td>
+              </tr>
+            ) : (
+              <></>
+            )}
+          </tbody>
         </table>
       </section>
 
       <section className={"WeaponsSection"}>
         <h5>Armas</h5>
         <table>
-          <tr>
-            <th>Nome</th>
-            <th>Custo</th>
-            <th>Força necessária</th>
-            <th>Peso</th>
-            <th>Observações</th>
-          </tr>
-
-          {characterSheet.weapons ? (
-            characterSheet.weapons?.map((weapon) => (
-              <tr>
-                <td>{weapon.name}</td>
-                <td>{weapon.cost}</td>
-                <td>{weapon.strengthRequired}</td>
-                <td>{weapon.weight}</td>
-                <td>{weapon.observation}</td>
-              </tr>
-            ))
-          ) : (
-            <></>
-          )}
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Custo</th>
+              <th>Força necessária</th>
+              <th>Peso</th>
+              <th>Observações</th>
+            </tr>
+          </thead>
+          <tbody>
+            {characterSheet.weapons ? (
+              characterSheet.weapons?.map((weapon) => (
+                <tr key={weapon.name}>
+                  <td>{weapon.name}</td>
+                  <td>{weapon.cost}</td>
+                  <td>{weapon.strengthRequired}</td>
+                  <td>{weapon.weight}</td>
+                  <td>{weapon.observation}</td>
+                </tr>
+              ))
+            ) : (
+              <></>
+            )}
+          </tbody>
         </table>
       </section>
     </CharacterSheetContainer>

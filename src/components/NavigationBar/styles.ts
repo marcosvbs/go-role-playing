@@ -7,7 +7,7 @@ export const NavigationBarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 4rem;
+  margin: 4rem auto;
 
   max-width: 880px;
 `;
