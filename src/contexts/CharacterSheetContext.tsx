@@ -79,6 +79,20 @@ interface CharacterSheetContextType {
   updateCharacterSheetRace: (updatedCharacterSheet: CharacterSheetType) => void;
 }
 
+interface Race {
+  id: number;
+  name: string;
+  biology: string;
+  culture: string;
+  attributes: {
+    strength: number;
+    agility: number;
+    intelligence: number;
+    will: number;
+  };
+  automaticSkillId: number;
+}
+
 export const CharacterSheetContext = createContext(
   {} as CharacterSheetContextType
 );
@@ -116,7 +130,7 @@ export function CharacterSheetContextProvider({
     consumables: null,
   });
 
-  function updateCharacterSheetRace(updatedCharacterSheet: CharacterSheetType) {
+  function updateCharacterSheetRace(race: Race) {
     setCharacterSheet({
       ...updatedCharacterSheet,
     });

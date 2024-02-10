@@ -38,7 +38,7 @@ export const RaceOptions = styled.form`
   border-radius: 4px;
   background-color: ${(props) => props.theme["gray-600"]};
 
-  label {
+  .option {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;

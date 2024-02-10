@@ -10,9 +10,51 @@ import {
 } from "./styles";
 import { races } from "../../data/races.json";
 import { SkillCard } from "../../components/SkillCard";
+import { useCallback, useContext, useEffect, useState } from "react";
+import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
+
+interface Race {
+  id: number;
+  name: string;
+  biology: string;
+  culture: string;
+  attributes: {
+    strength: number;
+    agility: number;
+    intelligence: number;
+    will: number;
+  };
+  automaticSkillId: number;
+}
 
 export function RaceSelection() {
   const avaliableRaces = races;
+  const defaultSelectedRaceId = 0;
+
+  const { characterSheet } = useContext(CharacterSheetContext);
+
+  const [selectedRaceId, setSelectedRaceId] = useState(0);
+
+  const getSelectedRace = useCallback(
+    (raceId: number) => {
+      const selectedRace = avaliableRaces.filter((race) => race.id === raceId);
+      return selectedRace[0];
+    },
+    [avaliableRaces]
+  );
+
+  const [selectedRace, setSelectedRace] = useState<Race>(
+    getSelectedRace(defaultSelectedRaceId)
+  );
+
+  function handleSelectRace(raceId: number) {
+    setSelectedRaceId(raceId);
+  }
+
+  useEffect(() => {
+    setSelectedRace(() => getSelectedRace(selectedRaceId));
+    console.log("useEffect Ativou!");
+  }, [selectedRaceId, getSelectedRace]);
 
   return (
     <>
@@ -27,10 +69,19 @@ export function RaceSelection() {
               {avaliableRaces ? (
                 avaliableRaces.map((race) => {
                   return (
-                    <label key={race.id}>
-                      <input type="radio" name={race.name} value={race.name} />
-                      {race.name}
-                    </label>
+                    <div className={"option"} key={race.id}>
+                      <input
+                        type={"radio"}
+                        id={race.name}
+                        name={"races"}
+                        value={race.name}
+                        checked={race.id === selectedRaceId}
+                        onChange={() => {
+                          handleSelectRace(race.id);
+                        }}
+                      />
+                      <label htmlFor={race.name}>{race.name}</label>
+                    </div>
                   );
                 })
               ) : (
@@ -40,27 +91,17 @@ export function RaceSelection() {
 
             <SelectedRaceInfo>
               <div className={"titleSection"}>
-                <h4>Anões</h4>
+                <h4>{selectedRace.name}</h4>
               </div>
 
               <section className={"infoSection"}>
                 <h5>Biologia</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  blandit quis diam pulvinar malesuada. Vivamus hendrerit luctus
-                  gravida. Pellentesque non sapien nibh. Duis sodales ultricies
-                  turpis nec egestas.
-                </p>
+                <p>{selectedRace.biology}</p>
               </section>
 
               <section className={"infoSection"}>
                 <h5>Cultura</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  blandit quis diam pulvinar malesuada. Vivamus hendrerit luctus
-                  gravida. Pellentesque non sapien nibh. Duis sodales ultricies
-                  turpis nec egestas.
-                </p>
+                <p>{selectedRace.culture}</p>
               </section>
 
               <section className={"infoSection"}>

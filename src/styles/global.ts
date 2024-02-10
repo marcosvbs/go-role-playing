@@ -47,6 +47,7 @@ export const GlobalStyle = createGlobalStyle`
   button, a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    text-transform: uppercase;
   }
 
   p {
