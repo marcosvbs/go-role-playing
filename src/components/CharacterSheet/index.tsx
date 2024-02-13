@@ -86,7 +86,7 @@ export function CharacterSheet() {
               <th>Dificuldade</th>
             </tr>
           </thead>
-          <tbody>
+          {/* <tbody>
             {characterSheet.skills ? (
               characterSheet.skills?.map((skill) => (
                 <tr key={skill.name}>
@@ -102,7 +102,7 @@ export function CharacterSheet() {
             ) : (
               <></>
             )}
-          </tbody>
+          </tbody> */}
         </table>
       </section>
 

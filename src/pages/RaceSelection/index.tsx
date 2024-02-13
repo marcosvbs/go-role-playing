@@ -31,7 +31,9 @@ export function RaceSelection() {
   const avaliableRaces = races;
   const defaultSelectedRaceId = 0;
 
-  const { characterSheet } = useContext(CharacterSheetContext);
+  const { characterSheet, updateCharacterSheetRace } = useContext(
+    CharacterSheetContext
+  );
 
   const [selectedRaceId, setSelectedRaceId] = useState(0);
 
@@ -49,11 +51,21 @@ export function RaceSelection() {
 
   function handleSelectRace(raceId: number) {
     setSelectedRaceId(raceId);
+
+    updateCharacterSheetRace({
+      name: selectedRace.name,
+      attributes: {
+        strength: selectedRace.attributes.strength,
+        agility: selectedRace.attributes.agility,
+        intelligence: selectedRace.attributes.intelligence,
+        will: selectedRace.attributes.will,
+      },
+      automaticSkillId: selectedRace.automaticSkillId,
+    });
   }
 
   useEffect(() => {
     setSelectedRace(() => getSelectedRace(selectedRaceId));
-    console.log("useEffect Ativou!");
   }, [selectedRaceId, getSelectedRace]);
 
   return (

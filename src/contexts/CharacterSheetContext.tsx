@@ -67,23 +67,15 @@ interface CharacterSheetType {
     dodge: number;
     determination: number;
   };
-  skills: Skill[] | null;
+  skills: number[] | null;
   armor: Armor | null;
   weapons: Weapon[] | null;
   equipments: Equipment[] | null;
   consumables: Consumable[] | null;
 }
 
-interface CharacterSheetContextType {
-  characterSheet: CharacterSheetType;
-  updateCharacterSheetRace: (updatedCharacterSheet: CharacterSheetType) => void;
-}
-
 interface Race {
-  id: number;
   name: string;
-  biology: string;
-  culture: string;
   attributes: {
     strength: number;
     agility: number;
@@ -91,6 +83,11 @@ interface Race {
     will: number;
   };
   automaticSkillId: number;
+}
+
+interface CharacterSheetContextType {
+  characterSheet: CharacterSheetType;
+  updateCharacterSheetRace: (race: Race) => void;
 }
 
 export const CharacterSheetContext = createContext(
@@ -132,7 +129,15 @@ export function CharacterSheetContextProvider({
 
   function updateCharacterSheetRace(race: Race) {
     setCharacterSheet({
-      ...updatedCharacterSheet,
+      ...characterSheet,
+      race: race.name,
+      attributes: {
+        strength: race.attributes.strength,
+        agility: race.attributes.agility,
+        intelligence: race.attributes.intelligence,
+        will: race.attributes.will,
+      },
+      skills: [race.automaticSkillId],
     });
   }
 
