@@ -3,10 +3,10 @@ import { SkillCardBody, SkillCardContainer, SkillCardHeader } from "./styles";
 interface SkillCardProps {
   name: string;
   description: string;
-  category: string;
+  category: string | null;
   type: string;
-  mana: number;
-  difficulty: number;
+  mana: string | number | null;
+  difficulty: string | number | null;
 }
 
 export function SkillCard({
@@ -27,15 +27,23 @@ export function SkillCard({
         </div>
 
         <div className={"skillInfo"}>
-          <div>
-            <span>{mana}</span>
-            <span>Mana</span>
-          </div>
+          {mana ? (
+            <div>
+              <span>{mana}</span>
+              <span>Mana</span>
+            </div>
+          ) : (
+            <div></div>
+          )}
 
-          <div>
-            <span>{difficulty}</span>
-            <span>Difficult</span>
-          </div>
+          {difficulty ? (
+            <div>
+              <span>{difficulty}</span>
+              <span>Difficult</span>
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
       </SkillCardHeader>
 

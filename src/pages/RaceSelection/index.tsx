@@ -17,8 +17,8 @@ import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
 interface Skill {
   name: string;
   type: string;
-  category: string | number | null;
-  requirement: string | number | null;
+  category: string | null;
+  requirement: string | null;
   mana: string | number | null;
   difficulty: string | number | null;
   description: string;
@@ -67,7 +67,7 @@ export function RaceSelection() {
         automaticSkill: {
           name: raceAutomaticSkill.name,
           type: raceAutomaticSkill.type,
-          category: raceAutomaticSkill.requirement,
+          category: raceAutomaticSkill.category,
           requirement: raceAutomaticSkill.requirement,
           mana: raceAutomaticSkill.mana,
           difficulty: raceAutomaticSkill.difficulty,
@@ -97,8 +97,6 @@ export function RaceSelection() {
       },
       automaticSkill: selectedRace.automaticSkill,
     });
-
-    console.log("UseEffect Ativou!");
   }, [selectedRace, updateCharacterSheetRace]);
 
   return (
@@ -152,14 +150,12 @@ export function RaceSelection() {
               <section className={"infoSection"}>
                 <h5>Habilidade Automática</h5>
                 <SkillCard
-                  name={"Tanto faz 1"}
-                  description={
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit quis diam pulvinar malesuada. Vivamus hendrerit luctus gravida. Pellentesque non sapien nibh. Duis sodales ultricies turpis nec egestas."
-                  }
-                  category={"nenhuma"}
-                  type={"nenhuma"}
-                  mana={0}
-                  difficulty={0}
+                  name={selectedRace.automaticSkill.name}
+                  description={selectedRace.automaticSkill.description}
+                  category={selectedRace.automaticSkill.category}
+                  type={selectedRace.automaticSkill.type}
+                  mana={selectedRace.automaticSkill.mana}
+                  difficulty={selectedRace.automaticSkill.difficulty}
                 />
               </section>
             </SelectedRaceInfo>

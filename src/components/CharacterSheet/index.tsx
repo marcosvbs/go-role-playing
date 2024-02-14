@@ -94,9 +94,9 @@ export function CharacterSheet() {
                   <td>
                     {skill.type} - {skill.category}
                   </td>
-                  <td>{skill.requirement}</td>
-                  <td>{skill.mana}</td>
-                  <td>{skill.difficulty}</td>
+                  <td>{skill.requirement ? skill.requirement : "-"}</td>
+                  <td>{skill.mana ? skill.mana : "-"}</td>
+                  <td>{skill.difficulty ? skill.difficulty : "-"}</td>
                 </tr>
               ))
             ) : (

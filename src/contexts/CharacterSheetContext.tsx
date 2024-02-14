@@ -11,8 +11,8 @@ interface Equipment {
 interface Skill {
   name: string;
   type: string;
-  category: string | number | null;
-  requirement: string | number | null;
+  category: string | null;
+  requirement: string | null;
   mana: string | number | null;
   difficulty: string | number | null;
   description: string;
