@@ -42,9 +42,10 @@ export function RaceSelection() {
   const racesAutomaticSkills = skills.filter(
     (skill) => skill.associations.raceId !== null
   );
-  const defaultSelectedRaceId = 0;
 
   const { updateCharacterSheetRace } = useContext(CharacterSheetContext);
+
+  const defaultSelectedRaceId = 0;
 
   const selectRace = useCallback(
     (raceId: number) => {

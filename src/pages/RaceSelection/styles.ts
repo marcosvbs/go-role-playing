@@ -41,7 +41,18 @@ export const RaceOptions = styled.form`
   .option {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 0.25rem;
+    cursor: pointer;
+
+    input {
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+    label {
+      padding: 0.5rem;
+      cursor: pointer;
+    }
   }
 `;
 export const SelectedRaceInfo = styled.div`
@@ -63,5 +74,9 @@ export const SelectedRaceInfo = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  p {
+    color: ${(props) => props.theme["gray-400"]};
   }
 `;
