@@ -9,10 +9,20 @@ import {
   SelectedRaceInfo,
 } from "./styles";
 import { races } from "../../data/races.json";
+import { skills } from "../../data/skills.json";
 import { SkillCard } from "../../components/SkillCard";
 import { useCallback, useContext, useEffect, useState } from "react";
 import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
 
+interface Skill {
+  name: string;
+  type: string;
+  category: string | number | null;
+  requirement: string | number | null;
+  mana: string | number | null;
+  difficulty: string | number | null;
+  description: string;
+}
 interface Race {
   id: number;
   name: string;
@@ -24,34 +34,59 @@ interface Race {
     intelligence: number;
     will: number;
   };
-  automaticSkillId: number;
+  automaticSkill: Skill;
 }
 
 export function RaceSelection() {
   const avaliableRaces = races;
+  const racesAutomaticSkills = skills.filter(
+    (skill) => skill.associations.raceId !== null
+  );
   const defaultSelectedRaceId = 0;
 
-  const { characterSheet, updateCharacterSheetRace } = useContext(
-    CharacterSheetContext
-  );
+  const { updateCharacterSheetRace } = useContext(CharacterSheetContext);
 
-  const [selectedRaceId, setSelectedRaceId] = useState(0);
-
-  const getSelectedRace = useCallback(
+  const selectRace = useCallback(
     (raceId: number) => {
-      const selectedRace = avaliableRaces.filter((race) => race.id === raceId);
-      return selectedRace[0];
+      const [race] = avaliableRaces.filter((race) => race.id === raceId);
+      const [raceAutomaticSkill] = racesAutomaticSkills.filter(
+        (skill) => race.id === skill.associations.raceId
+      );
+
+      return {
+        id: race.id,
+        name: race.name,
+        biology: race.biology,
+        culture: race.culture,
+        attributes: {
+          strength: race.attributes.strength,
+          agility: race.attributes.agility,
+          intelligence: race.attributes.intelligence,
+          will: race.attributes.will,
+        },
+        automaticSkill: {
+          name: raceAutomaticSkill.name,
+          type: raceAutomaticSkill.type,
+          category: raceAutomaticSkill.requirement,
+          requirement: raceAutomaticSkill.requirement,
+          mana: raceAutomaticSkill.mana,
+          difficulty: raceAutomaticSkill.difficulty,
+          description: raceAutomaticSkill.description,
+        },
+      };
     },
-    [avaliableRaces]
+    [avaliableRaces, racesAutomaticSkills]
   );
 
   const [selectedRace, setSelectedRace] = useState<Race>(
-    getSelectedRace(defaultSelectedRaceId)
+    selectRace(defaultSelectedRaceId)
   );
 
   function handleSelectRace(raceId: number) {
-    setSelectedRaceId(raceId);
+    setSelectedRace(selectRace(raceId));
+  }
 
+  useEffect(() => {
     updateCharacterSheetRace({
       name: selectedRace.name,
       attributes: {
@@ -60,13 +95,11 @@ export function RaceSelection() {
         intelligence: selectedRace.attributes.intelligence,
         will: selectedRace.attributes.will,
       },
-      automaticSkillId: selectedRace.automaticSkillId,
+      automaticSkill: selectedRace.automaticSkill,
     });
-  }
 
-  useEffect(() => {
-    setSelectedRace(() => getSelectedRace(selectedRaceId));
-  }, [selectedRaceId, getSelectedRace]);
+    console.log("UseEffect Ativou!");
+  }, [selectedRace, updateCharacterSheetRace]);
 
   return (
     <>
@@ -87,7 +120,7 @@ export function RaceSelection() {
                         id={race.name}
                         name={"races"}
                         value={race.name}
-                        checked={race.id === selectedRaceId}
+                        checked={race.id === selectedRace.id}
                         onChange={() => {
                           handleSelectRace(race.id);
                         }}

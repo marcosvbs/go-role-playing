@@ -86,7 +86,7 @@ export function CharacterSheet() {
               <th>Dificuldade</th>
             </tr>
           </thead>
-          {/* <tbody>
+          <tbody>
             {characterSheet.skills ? (
               characterSheet.skills?.map((skill) => (
                 <tr key={skill.name}>
@@ -102,7 +102,7 @@ export function CharacterSheet() {
             ) : (
               <></>
             )}
-          </tbody> */}
+          </tbody>
         </table>
       </section>
 
@@ -148,7 +148,7 @@ export function CharacterSheet() {
           </thead>
           <tbody>
             {characterSheet.armor ? (
-              <tr>
+              <tr key={characterSheet.armor.name}>
                 <td>{characterSheet.armor.name}</td>
                 <td>{characterSheet.armor.cost}</td>
                 <td>{characterSheet.armor.defense}</td>

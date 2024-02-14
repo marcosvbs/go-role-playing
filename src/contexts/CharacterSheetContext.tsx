@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useCallback, useState } from "react";
 
 interface Equipment {
   name: string;
@@ -11,10 +11,10 @@ interface Equipment {
 interface Skill {
   name: string;
   type: string;
-  category: string;
-  requirement: string;
-  mana: number;
-  difficulty: number;
+  category: string | number | null;
+  requirement: string | number | null;
+  mana: string | number | null;
+  difficulty: string | number | null;
   description: string;
 }
 
@@ -67,11 +67,11 @@ interface CharacterSheetType {
     dodge: number;
     determination: number;
   };
-  skills: number[] | null;
+  skills: Skill[];
   armor: Armor | null;
-  weapons: Weapon[] | null;
-  equipments: Equipment[] | null;
-  consumables: Consumable[] | null;
+  weapons: Weapon[];
+  equipments: Equipment[];
+  consumables: Consumable[];
 }
 
 interface Race {
@@ -82,7 +82,7 @@ interface Race {
     intelligence: number;
     will: number;
   };
-  automaticSkillId: number;
+  automaticSkill: Skill;
 }
 
 interface CharacterSheetContextType {
@@ -120,14 +120,14 @@ export function CharacterSheetContextProvider({
       dodge: 0,
       determination: 0,
     },
-    skills: null,
+    skills: [],
     armor: null,
-    weapons: null,
-    equipments: null,
-    consumables: null,
+    weapons: [],
+    equipments: [],
+    consumables: [],
   });
 
-  function updateCharacterSheetRace(race: Race) {
+  const updateCharacterSheetRace = useCallback((race: Race) => {
     setCharacterSheet({
       ...characterSheet,
       race: race.name,
@@ -137,9 +137,9 @@ export function CharacterSheetContextProvider({
         intelligence: race.attributes.intelligence,
         will: race.attributes.will,
       },
-      skills: [race.automaticSkillId],
+      skills: [race.automaticSkill],
     });
-  }
+  }, []);
 
   return (
     <CharacterSheetContext.Provider
