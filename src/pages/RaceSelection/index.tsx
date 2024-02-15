@@ -11,7 +11,7 @@ import {
 import { races } from "../../data/races.json";
 import { skills } from "../../data/skills.json";
 import { SkillCard } from "../../components/SkillCard";
-import { useCallback, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
 
 interface Skill {
@@ -47,37 +47,34 @@ export function RaceSelection() {
 
   const defaultSelectedRaceId = 0;
 
-  const selectRace = useCallback(
-    (raceId: number) => {
-      const [race] = avaliableRaces.filter((race) => race.id === raceId);
-      const [raceAutomaticSkill] = racesAutomaticSkills.filter(
-        (skill) => race.id === skill.associations.raceId
-      );
+  function selectRace(raceId: number) {
+    const [race] = avaliableRaces.filter((race) => race.id === raceId);
+    const [raceAutomaticSkill] = racesAutomaticSkills.filter(
+      (skill) => race.id === skill.associations.raceId
+    );
 
-      return {
-        id: race.id,
-        name: race.name,
-        biology: race.biology,
-        culture: race.culture,
-        attributes: {
-          strength: race.attributes.strength,
-          agility: race.attributes.agility,
-          intelligence: race.attributes.intelligence,
-          will: race.attributes.will,
-        },
-        automaticSkill: {
-          name: raceAutomaticSkill.name,
-          type: raceAutomaticSkill.type,
-          category: raceAutomaticSkill.category,
-          requirement: raceAutomaticSkill.requirement,
-          mana: raceAutomaticSkill.mana,
-          difficulty: raceAutomaticSkill.difficulty,
-          description: raceAutomaticSkill.description,
-        },
-      };
-    },
-    [avaliableRaces, racesAutomaticSkills]
-  );
+    return {
+      id: race.id,
+      name: race.name,
+      biology: race.biology,
+      culture: race.culture,
+      attributes: {
+        strength: race.attributes.strength,
+        agility: race.attributes.agility,
+        intelligence: race.attributes.intelligence,
+        will: race.attributes.will,
+      },
+      automaticSkill: {
+        name: raceAutomaticSkill.name,
+        type: raceAutomaticSkill.type,
+        category: raceAutomaticSkill.category,
+        requirement: raceAutomaticSkill.requirement,
+        mana: raceAutomaticSkill.mana,
+        difficulty: raceAutomaticSkill.difficulty,
+        description: raceAutomaticSkill.description,
+      },
+    };
+  }
 
   const [selectedRace, setSelectedRace] = useState<Race>(
     selectRace(defaultSelectedRaceId)
@@ -98,7 +95,7 @@ export function RaceSelection() {
       },
       automaticSkill: selectedRace.automaticSkill,
     });
-  }, [selectedRace, updateCharacterSheetRace]);
+  }, [selectedRace]);
 
   return (
     <>

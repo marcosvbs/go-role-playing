@@ -38,19 +38,59 @@ export function CharacterSheet() {
         <h5>Atributos</h5>
         <ul>
           <li>
-            <span>{characterSheet.attributes.strength}</span>
+            <span>
+              {characterSheet.raceAttributes.strength +
+                characterSheet.vocationAttributes.strength}
+            </span>
+            <span>
+              {"(" +
+                characterSheet.raceAttributes.strength +
+                "+" +
+                characterSheet.vocationAttributes.strength +
+                ")"}
+            </span>
             <span>Força</span>
           </li>
           <li>
-            <span>{characterSheet.attributes.agility}</span>
+            <span>
+              {characterSheet.raceAttributes.agility +
+                characterSheet.vocationAttributes.agility}
+            </span>
+            <span>
+              {"(" +
+                characterSheet.raceAttributes.agility +
+                "+" +
+                characterSheet.vocationAttributes.agility +
+                ")"}
+            </span>
             <span>Agilidade</span>
           </li>
           <li>
-            <span>{characterSheet.attributes.intelligence}</span>
+            <span>
+              {characterSheet.raceAttributes.intelligence +
+                characterSheet.vocationAttributes.intelligence}
+            </span>
+            <span>
+              {"(" +
+                characterSheet.raceAttributes.intelligence +
+                "+" +
+                characterSheet.vocationAttributes.intelligence +
+                ")"}
+            </span>
             <span>Inteligencia</span>
           </li>
           <li>
-            <span>{characterSheet.attributes.will}</span>
+            <span>
+              {characterSheet.raceAttributes.will +
+                characterSheet.vocationAttributes.will}
+            </span>
+            <span>
+              {"(" +
+                characterSheet.raceAttributes.will +
+                "+" +
+                characterSheet.vocationAttributes.will +
+                ")"}
+            </span>
             <span>Vontade</span>
           </li>
         </ul>
@@ -87,8 +127,60 @@ export function CharacterSheet() {
             </tr>
           </thead>
           <tbody>
-            {characterSheet.skills ? (
-              characterSheet.skills?.map((skill) => (
+            {characterSheet.skills.raceAutomaticSkill ? (
+              <tr key={characterSheet.skills.raceAutomaticSkill.name}>
+                <td>{characterSheet.skills.raceAutomaticSkill.name}</td>
+                <td>
+                  {characterSheet.skills.raceAutomaticSkill.type} -{" "}
+                  {characterSheet.skills.raceAutomaticSkill.category}
+                </td>
+                <td>
+                  {characterSheet.skills.raceAutomaticSkill.requirement
+                    ? characterSheet.skills.raceAutomaticSkill.requirement
+                    : "-"}
+                </td>
+                <td>
+                  {characterSheet.skills.raceAutomaticSkill.mana
+                    ? characterSheet.skills.raceAutomaticSkill.mana
+                    : "-"}
+                </td>
+                <td>
+                  {characterSheet.skills.raceAutomaticSkill.difficulty
+                    ? characterSheet.skills.raceAutomaticSkill.difficulty
+                    : "-"}
+                </td>
+              </tr>
+            ) : (
+              <></>
+            )}
+            {characterSheet.skills.vocationAutomaticSkill ? (
+              <tr key={characterSheet.skills.vocationAutomaticSkill.name}>
+                <td>{characterSheet.skills.vocationAutomaticSkill.name}</td>
+                <td>
+                  {characterSheet.skills.vocationAutomaticSkill.type} -{" "}
+                  {characterSheet.skills.vocationAutomaticSkill.category}
+                </td>
+                <td>
+                  {characterSheet.skills.vocationAutomaticSkill.requirement
+                    ? characterSheet.skills.vocationAutomaticSkill.requirement
+                    : "-"}
+                </td>
+                <td>
+                  {characterSheet.skills.vocationAutomaticSkill.mana
+                    ? characterSheet.skills.vocationAutomaticSkill.mana
+                    : "-"}
+                </td>
+                <td>
+                  {characterSheet.skills.vocationAutomaticSkill.difficulty
+                    ? characterSheet.skills.vocationAutomaticSkill.difficulty
+                    : "-"}
+                </td>
+              </tr>
+            ) : (
+              <></>
+            )}
+            {characterSheet.skills.vocationSkills ? (
+              characterSheet.skills.vocationSkills?.map((skill) => (
                 <tr key={skill.name}>
                   <td>{skill.name}</td>
                   <td>
