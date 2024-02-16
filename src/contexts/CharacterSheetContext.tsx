@@ -172,8 +172,8 @@ export function CharacterSheetContextProvider({
   });
 
   function updateCharacterSheetRace(race: Race) {
-    setCharacterSheet({
-      ...characterSheet,
+    setCharacterSheet((prevCharacterSheet) => ({
+      ...prevCharacterSheet,
       race: race.name,
       raceAttributes: {
         strength: race.attributes.strength,
@@ -183,15 +183,18 @@ export function CharacterSheetContextProvider({
       },
       skills: {
         raceAutomaticSkill: race.automaticSkill,
-        vocationAutomaticSkill: characterSheet.skills.vocationAutomaticSkill,
-        vocationSkills: characterSheet.skills.vocationSkills,
+        vocationAutomaticSkill:
+          prevCharacterSheet.skills.vocationAutomaticSkill,
+        vocationSkills: prevCharacterSheet.skills.vocationSkills,
       },
-    });
+    }));
+
+    updateCharacterSheetAttributes();
   }
 
   function updateCharacterSheetVocation(vocation: Vocation) {
-    setCharacterSheet({
-      ...characterSheet,
+    setCharacterSheet((prevCharacterSheet) => ({
+      ...prevCharacterSheet,
       vocation: vocation.name,
       vocationAttributes: {
         strength: vocation.attributes.strength,
@@ -200,41 +203,38 @@ export function CharacterSheetContextProvider({
         will: vocation.attributes.will,
       },
       skills: {
-        raceAutomaticSkill: characterSheet.skills.raceAutomaticSkill,
+        raceAutomaticSkill: prevCharacterSheet.skills.raceAutomaticSkill,
         vocationAutomaticSkill: vocation.automaticSkill,
-        vocationSkills: characterSheet.skills.vocationSkills,
+        vocationSkills: prevCharacterSheet.skills.vocationSkills,
       },
-    });
+    }));
+
+    updateCharacterSheetAttributes();
   }
 
   function updateCharacterSheetAttributes() {
-    setCharacterSheet({
-      ...characterSheet,
+    setCharacterSheet((prevCharacterSheet) => ({
+      ...prevCharacterSheet,
       attributes: {
         strength:
-          characterSheet.raceAttributes.strength +
-          characterSheet.vocationAttributes.strength,
+          prevCharacterSheet.raceAttributes.strength +
+          prevCharacterSheet.vocationAttributes.strength,
         agility:
-          characterSheet.raceAttributes.agility +
-          characterSheet.vocationAttributes.agility,
+          prevCharacterSheet.raceAttributes.agility +
+          prevCharacterSheet.vocationAttributes.agility,
         intelligence:
-          characterSheet.raceAttributes.intelligence +
-          characterSheet.vocationAttributes.intelligence,
+          prevCharacterSheet.raceAttributes.intelligence +
+          prevCharacterSheet.vocationAttributes.intelligence,
         will:
-          characterSheet.raceAttributes.will +
-          characterSheet.vocationAttributes.will,
+          prevCharacterSheet.raceAttributes.will +
+          prevCharacterSheet.vocationAttributes.will,
       },
-    });
+    }));
   }
 
   useEffect(() => {
-    updateCharacterSheetAttributes();
     console.log(characterSheet);
-  }, [
-    updateCharacterSheetAttributes,
-    characterSheet.raceAttributes,
-    characterSheet.vocationAttributes,
-  ]);
+  }, [characterSheet]);
 
   return (
     <CharacterSheetContext.Provider

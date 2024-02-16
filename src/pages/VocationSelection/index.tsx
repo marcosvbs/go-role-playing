@@ -10,7 +10,7 @@ import {
 } from "./styles";
 import { vocations } from "../../data/vocations.json";
 import { skills } from "../../data/skills.json";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { SkillCard } from "../../components/SkillCard";
 import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
 interface Skill {
@@ -46,7 +46,7 @@ export function VocationSelection() {
 
   const defaultSelectedVocationId = 0;
 
-  function selectVocation(vocationId: number) {
+  function getVocation(vocationId: number) {
     const [vocation] = avaliableVocations.filter(
       (vocation) => vocation.id === vocationId
     );
@@ -77,25 +77,24 @@ export function VocationSelection() {
   }
 
   const [selectedVocation, setSelectedVocation] = useState<Vocation>(
-    selectVocation(defaultSelectedVocationId)
+    getVocation(defaultSelectedVocationId)
   );
 
   function handleSelectVocation(vocationId: number) {
-    setSelectedVocation(selectVocation(vocationId));
-  }
+    const vocation = getVocation(vocationId);
+    setSelectedVocation(vocation);
 
-  useEffect(() => {
     updateCharacterSheetVocation({
-      name: selectedVocation.name,
+      name: vocation.name,
       attributes: {
-        strength: selectedVocation.attributesBonus.strength,
-        agility: selectedVocation.attributesBonus.agility,
-        intelligence: selectedVocation.attributesBonus.intelligence,
-        will: selectedVocation.attributesBonus.will,
+        strength: vocation.attributesBonus.strength,
+        agility: vocation.attributesBonus.agility,
+        intelligence: vocation.attributesBonus.intelligence,
+        will: vocation.attributesBonus.will,
       },
-      automaticSkill: selectedVocation.automaticSkill,
+      automaticSkill: vocation.automaticSkill,
     });
-  }, [selectedVocation]);
+  }
 
   return (
     <>

@@ -11,7 +11,7 @@ import {
 import { races } from "../../data/races.json";
 import { skills } from "../../data/skills.json";
 import { SkillCard } from "../../components/SkillCard";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
 
 interface Skill {
@@ -47,7 +47,7 @@ export function RaceSelection() {
 
   const defaultSelectedRaceId = 0;
 
-  function selectRace(raceId: number) {
+  function getRace(raceId: number) {
     const [race] = avaliableRaces.filter((race) => race.id === raceId);
     const [raceAutomaticSkill] = racesAutomaticSkills.filter(
       (skill) => race.id === skill.associations.raceId
@@ -77,25 +77,24 @@ export function RaceSelection() {
   }
 
   const [selectedRace, setSelectedRace] = useState<Race>(
-    selectRace(defaultSelectedRaceId)
+    getRace(defaultSelectedRaceId)
   );
 
   function handleSelectRace(raceId: number) {
-    setSelectedRace(selectRace(raceId));
-  }
+    const race = getRace(raceId);
+    setSelectedRace(race);
 
-  useEffect(() => {
     updateCharacterSheetRace({
-      name: selectedRace.name,
+      name: race.name,
       attributes: {
-        strength: selectedRace.attributes.strength,
-        agility: selectedRace.attributes.agility,
-        intelligence: selectedRace.attributes.intelligence,
-        will: selectedRace.attributes.will,
+        strength: race.attributes.strength,
+        agility: race.attributes.agility,
+        intelligence: race.attributes.intelligence,
+        will: race.attributes.will,
       },
-      automaticSkill: selectedRace.automaticSkill,
+      automaticSkill: race.automaticSkill,
     });
-  }, [selectedRace]);
+  }
 
   return (
     <>
