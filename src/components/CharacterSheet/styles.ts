@@ -5,6 +5,8 @@ export const CharacterSheetContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
 
+  width: 50%;
+
   max-width: 50%;
 
   padding: 1.5rem;
@@ -16,6 +18,7 @@ export const CharacterSheetContainer = styled.div`
 
   h5 {
     padding-bottom: 1rem;
+    text-align: center;
   }
 
   .BasicInfoSection {
@@ -44,6 +47,8 @@ export const CharacterSheetContainer = styled.div`
       justify-content: space-evenly;
 
       list-style: none;
+
+      background-color: ${(props) => props.theme.black};
     }
 
     .Status ul li {
@@ -78,49 +83,72 @@ export const CharacterSheetContainer = styled.div`
     gap: 0.5rem;
   }
 
+  .BasicInfo,
+  .Status,
+  .AttributesSection,
+  .DefenceSection,
   .SkillsSection,
   .EquipmentSection,
-  .ClassSection,
+  .armorSection,
   .WeaponsSection {
+    width: 100%;
+
     padding: 1rem;
 
     background-color: ${(props) => props.theme.black};
-
     border-radius: 4px;
+  }
 
-    table {
-      border-collapse: collapse;
-
-      width: 100%;
-    }
-
-    th {
-      padding: 0.5rem;
-
-      font-size: 0.625rem;
-      text-transform: uppercase;
-      color: ${(props) => props.theme.white};
-
-      border: 1px solid;
-    }
-
-    td {
-      max-width: 24px;
+  .SkillsSection {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
 
       padding: 0.5rem;
+      color: ${(props) => props.theme.white};
+    }
 
-      font-size: 0.625rem;
+    ul li {
+      list-style: none;
+    }
+
+    ul li button {
+      text-transform: none;
+      text-decoration: underline;
+      background: none;
+      border: none;
+
+      cursor: pointer;
+
+      padding: 0.5rem;
+
       color: ${(props) => props.theme.white};
 
-      border: 1px solid;
+      &:hover {
+        color: ${(props) => props.theme["green-300"]};
+      }
+    }
+  }
 
-      overflow: hidden;
+  .EquipmentSection,
+  .armorSection,
+  .WeaponsSection {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
 
-      height: 24px;
+      padding: 0.5rem;
+      color: ${(props) => props.theme.white};
+    }
 
-      /* overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis; */
+    ul li {
+      list-style: none;
+    }
+
+    ul li span {
+      color: ${(props) => props.theme.white};
     }
   }
 `;

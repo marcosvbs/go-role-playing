@@ -48,6 +48,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 0.875rem;
   }
 
   p {
