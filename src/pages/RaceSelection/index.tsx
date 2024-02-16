@@ -146,14 +146,7 @@ export function RaceSelection() {
 
               <section className={"infoSection"}>
                 <h5>Habilidade Automática</h5>
-                <SkillCard
-                  name={selectedRace.automaticSkill.name}
-                  description={selectedRace.automaticSkill.description}
-                  category={selectedRace.automaticSkill.category}
-                  type={selectedRace.automaticSkill.type}
-                  mana={selectedRace.automaticSkill.mana}
-                  difficulty={selectedRace.automaticSkill.difficulty}
-                />
+                <SkillCard skill={selectedRace.automaticSkill} />
               </section>
             </SelectedRaceInfo>
           </RaceSelectionForm>

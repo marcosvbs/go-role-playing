@@ -1,44 +1,40 @@
 import { SkillCardBody, SkillCardContainer, SkillCardHeader } from "./styles";
 
 interface SkillCardProps {
-  name: string;
-  description: string;
-  category: string | null;
-  type: string;
-  mana: string | number | null;
-  difficulty: string | number | null;
+  skill: {
+    name: string;
+    description: string;
+    category: string | null;
+    type: string;
+    mana: string | number | null;
+    difficulty: string | number | null;
+    requirement: string | null;
+  };
 }
 
-export function SkillCard({
-  name,
-  description,
-  category,
-  type,
-  mana,
-  difficulty,
-}: SkillCardProps) {
+export function SkillCard({ skill }: SkillCardProps) {
   return (
     <SkillCardContainer>
       <SkillCardHeader>
         <div className={"skillCategoryAndType"}>
           <span>
-            {category} - {type}
+            {skill.category} - {skill.type}
           </span>
         </div>
 
         <div className={"skillInfo"}>
-          {mana ? (
+          {skill.mana ? (
             <div>
-              <span>{mana}</span>
+              <span>{skill.mana}</span>
               <span>Mana</span>
             </div>
           ) : (
             <div></div>
           )}
 
-          {difficulty ? (
+          {skill.difficulty ? (
             <div>
-              <span>{difficulty}</span>
+              <span>{skill.difficulty}</span>
               <span>Difficult</span>
             </div>
           ) : (
@@ -49,11 +45,11 @@ export function SkillCard({
 
       <SkillCardBody>
         <div>
-          <h5>{name}</h5>
+          <h5>{skill.name}</h5>
         </div>
 
         <div>
-          <p>{description}</p>
+          <p>{skill.description}</p>
         </div>
       </SkillCardBody>
     </SkillCardContainer>

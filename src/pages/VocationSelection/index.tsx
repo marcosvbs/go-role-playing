@@ -151,14 +151,7 @@ export function VocationSelection() {
 
               <section className={"infoSection"}>
                 <h5>Habilidade Automática</h5>
-                <SkillCard
-                  name={selectedVocation.automaticSkill.name}
-                  description={selectedVocation.automaticSkill.description}
-                  category={selectedVocation.automaticSkill.category}
-                  type={selectedVocation.automaticSkill.type}
-                  mana={selectedVocation.automaticSkill.mana}
-                  difficulty={selectedVocation.automaticSkill.difficulty}
-                />
+                <SkillCard skill={selectedVocation.automaticSkill} />
               </section>
             </SelectedVocationInfo>
           </VocationSelectionForm>
