@@ -17,10 +17,12 @@ export const VocationSelectionContainer = styled.div`
 export const VocationSelectionBody = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: start;
   gap: 1rem;
 `;
 
 export const VocationSelectionForm = styled.div`
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;

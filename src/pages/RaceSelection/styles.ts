@@ -17,10 +17,12 @@ export const RaceSelectionContainer = styled.div`
 export const RaceSelectionBody = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: start;
   gap: 1rem;
 `;
 
 export const RaceSelectionForm = styled.div`
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
