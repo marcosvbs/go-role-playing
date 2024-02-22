@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 interface Equipment {
   name: string;
@@ -116,6 +116,7 @@ interface CharacterSheetContextType {
   characterSheet: CharacterSheetType;
   updateCharacterSheetRace: (race: Race) => void;
   updateCharacterSheetVocation: (vocation: Vocation) => void;
+  updateCharacterSheetSkills: (skills: Skill[]) => void;
 }
 
 export const CharacterSheetContext = createContext(
@@ -232,9 +233,15 @@ export function CharacterSheetContextProvider({
     }));
   }
 
-  useEffect(() => {
-    console.log(characterSheet);
-  }, [characterSheet]);
+  function updateCharacterSheetSkills(skills: Skill[]) {
+    setCharacterSheet((prevCharacterSheet) => ({
+      ...prevCharacterSheet,
+      skills: {
+        ...prevCharacterSheet.skills,
+        vocationSkills: skills,
+      },
+    }));
+  }
 
   return (
     <CharacterSheetContext.Provider
@@ -242,6 +249,7 @@ export function CharacterSheetContextProvider({
         characterSheet,
         updateCharacterSheetRace,
         updateCharacterSheetVocation,
+        updateCharacterSheetSkills,
       }}
     >
       {children}

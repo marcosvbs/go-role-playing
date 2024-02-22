@@ -11,8 +11,9 @@ import {
 import { races } from "../../data/races.json";
 import { skills } from "../../data/skills.json";
 import { SkillCard } from "../../components/SkillCard";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
+import { StepsSelectionContext } from "../../contexts/StepsSelectionContext";
 
 interface Skill {
   name: string;
@@ -45,7 +46,9 @@ export function RaceSelection() {
 
   const { updateCharacterSheetRace } = useContext(CharacterSheetContext);
 
-  const defaultSelectedRaceId = 0;
+  const { selectedRaceId, updateSelectedRaceId } = useContext(
+    StepsSelectionContext
+  );
 
   function getRace(raceId: number) {
     const [race] = avaliableRaces.filter((race) => race.id === raceId);
@@ -77,7 +80,7 @@ export function RaceSelection() {
   }
 
   const [selectedRace, setSelectedRace] = useState<Race>(
-    getRace(defaultSelectedRaceId)
+    getRace(selectedRaceId)
   );
 
   function handleSelectRace(raceId: number) {
@@ -94,7 +97,15 @@ export function RaceSelection() {
       },
       automaticSkill: race.automaticSkill,
     });
+
+    updateSelectedRaceId(raceId);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    handleSelectRace(selectedRaceId);
+  }, []);
 
   return (
     <>
@@ -136,12 +147,12 @@ export function RaceSelection() {
 
               <section className={"infoSection"}>
                 <h5>Biologia</h5>
-                <p>{selectedRace.biology}</p>
+                <p>{selectedRace.biology.split(".")[0] + "."}</p>
               </section>
 
               <section className={"infoSection"}>
                 <h5>Cultura</h5>
-                <p>{selectedRace.culture}</p>
+                <p>{selectedRace.culture.split(".")[0] + "."}</p>
               </section>
 
               <section className={"infoSection"}>

@@ -32,7 +32,7 @@ export const RaceOptions = styled.form`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
 
   padding: 2rem;
 

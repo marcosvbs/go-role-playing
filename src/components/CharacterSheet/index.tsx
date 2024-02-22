@@ -11,9 +11,7 @@ export function CharacterSheet() {
 
       <section className={"BasicInfoSection"}>
         <div className="BasicInfo">
-          <span>
-            {characterSheet.race} - {characterSheet.vocation}
-          </span>
+          <span>{characterSheet.race + " " + characterSheet.vocation}</span>
           <span>Nível {characterSheet.level}</span>
         </div>
         <div className="Status">
@@ -43,13 +41,18 @@ export function CharacterSheet() {
               {characterSheet.raceAttributes.strength +
                 characterSheet.vocationAttributes.strength}
             </span>
-            <span>
-              {"(" +
-                characterSheet.raceAttributes.strength +
-                "+" +
-                characterSheet.vocationAttributes.strength +
-                ")"}
-            </span>
+
+            {characterSheet.vocationAttributes.strength !== 0 ? (
+              <span>
+                {"(" +
+                  characterSheet.raceAttributes.strength +
+                  "+" +
+                  characterSheet.vocationAttributes.strength +
+                  ")"}
+              </span>
+            ) : (
+              <br />
+            )}
           </li>
           <li>
             <span>Agi</span>
@@ -57,13 +60,18 @@ export function CharacterSheet() {
               {characterSheet.raceAttributes.agility +
                 characterSheet.vocationAttributes.agility}
             </span>
-            <span>
-              {"(" +
-                characterSheet.raceAttributes.agility +
-                "+" +
-                characterSheet.vocationAttributes.agility +
-                ")"}
-            </span>
+
+            {characterSheet.vocationAttributes.agility !== 0 ? (
+              <span>
+                {"(" +
+                  characterSheet.raceAttributes.agility +
+                  "+" +
+                  characterSheet.vocationAttributes.agility +
+                  ")"}
+              </span>
+            ) : (
+              <br />
+            )}
           </li>
           <li>
             <span>Int</span>
@@ -71,13 +79,18 @@ export function CharacterSheet() {
               {characterSheet.raceAttributes.intelligence +
                 characterSheet.vocationAttributes.intelligence}
             </span>
-            <span>
-              {"(" +
-                characterSheet.raceAttributes.intelligence +
-                "+" +
-                characterSheet.vocationAttributes.intelligence +
-                ")"}
-            </span>
+
+            {characterSheet.vocationAttributes.intelligence !== 0 ? (
+              <span>
+                {"(" +
+                  characterSheet.raceAttributes.intelligence +
+                  "+" +
+                  characterSheet.vocationAttributes.intelligence +
+                  ")"}
+              </span>
+            ) : (
+              <br />
+            )}
           </li>
           <li>
             <span>Von</span>
@@ -85,13 +98,18 @@ export function CharacterSheet() {
               {characterSheet.raceAttributes.will +
                 characterSheet.vocationAttributes.will}
             </span>
-            <span>
-              {"(" +
-                characterSheet.raceAttributes.will +
-                "+" +
-                characterSheet.vocationAttributes.will +
-                ")"}
-            </span>
+
+            {characterSheet.vocationAttributes.will !== 0 ? (
+              <span>
+                {"(" +
+                  characterSheet.raceAttributes.will +
+                  "+" +
+                  characterSheet.vocationAttributes.will +
+                  ")"}
+              </span>
+            ) : (
+              <br />
+            )}
           </li>
         </ul>
       </section>
@@ -127,11 +145,8 @@ export function CharacterSheet() {
             <></>
           )}
           {characterSheet.skills.vocationAutomaticSkill ? (
-            <li>
-              <button
-                className={"skillButton"}
-                key={characterSheet.skills.vocationAutomaticSkill.name}
-              >
+            <li key={characterSheet.skills.vocationAutomaticSkill.name}>
+              <button className={"skillButton"}>
                 {characterSheet.skills.vocationAutomaticSkill.name}
               </button>
             </li>
@@ -140,10 +155,8 @@ export function CharacterSheet() {
           )}
           {characterSheet.skills.vocationSkills ? (
             characterSheet.skills.vocationSkills?.map((skill) => (
-              <li>
-                <button className={"skillButton"} key={skill.name}>
-                  {skill.name}
-                </button>
+              <li key={skill.name}>
+                <button className={"skillButton"}>{skill.name}</button>
               </li>
             ))
           ) : (

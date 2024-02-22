@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const VocationSelectionContainer = styled.div`
+export const SkillsSelectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -14,24 +14,23 @@ export const VocationSelectionContainer = styled.div`
   }
 `;
 
-export const VocationSelectionBody = styled.div`
+export const SkillsSelectionBody = styled.div`
   display: flex;
   flex-direction: row;
   align-items: start;
   gap: 1rem;
 `;
 
-export const VocationSelectionForm = styled.div`
+export const SkillsSelectionForm = styled.div`
   max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 `;
 
-export const VocationOptions = styled.div`
+export const SkillsOptions = styled.form`
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
 
   padding: 2rem;
@@ -41,6 +40,7 @@ export const VocationOptions = styled.div`
   background-color: ${(props) => props.theme["gray-600"]};
 
   .option {
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 0.25rem;
@@ -52,33 +52,28 @@ export const VocationOptions = styled.div`
     }
 
     label {
+      display: flex;
+      flex-direction: column;
       padding: 0.5rem;
+
       cursor: pointer;
     }
-  }
-`;
-export const SelectedVocationInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 
-  padding: 1rem;
+    button {
+      text-transform: none;
+      text-decoration: underline;
+      background: none;
+      border: none;
 
-  border: 1px solid ${(props) => props.theme["low-opacity-gray"]};
-  border-radius: 4px;
-  background-color: ${(props) => props.theme["gray-600"]};
+      cursor: pointer;
 
-  .titleSection {
-    display: flex;
-  }
+      padding: 0.5rem;
 
-  .infoSection {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+      color: ${(props) => props.theme.white};
 
-  p {
-    color: ${(props) => props.theme["gray-400"]};
+      &:hover {
+        color: ${(props) => props.theme["green-300"]};
+      }
+    }
   }
 `;

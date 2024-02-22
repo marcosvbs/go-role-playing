@@ -10,9 +10,10 @@ import {
 } from "./styles";
 import { vocations } from "../../data/vocations.json";
 import { skills } from "../../data/skills.json";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { SkillCard } from "../../components/SkillCard";
 import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
+import { StepsSelectionContext } from "../../contexts/StepsSelectionContext";
 interface Skill {
   name: string;
   type: string;
@@ -44,7 +45,9 @@ export function VocationSelection() {
 
   const { updateCharacterSheetVocation } = useContext(CharacterSheetContext);
 
-  const defaultSelectedVocationId = 0;
+  const { selectedVocationId, updateSelectedVocationId } = useContext(
+    StepsSelectionContext
+  );
 
   function getVocation(vocationId: number) {
     const [vocation] = avaliableVocations.filter(
@@ -77,7 +80,7 @@ export function VocationSelection() {
   }
 
   const [selectedVocation, setSelectedVocation] = useState<Vocation>(
-    getVocation(defaultSelectedVocationId)
+    getVocation(selectedVocationId)
   );
 
   function handleSelectVocation(vocationId: number) {
@@ -94,14 +97,22 @@ export function VocationSelection() {
       },
       automaticSkill: vocation.automaticSkill,
     });
+
+    updateSelectedVocationId(vocationId);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    handleSelectVocation(selectedVocationId);
+  }, []);
 
   return (
     <>
       <Header />
 
       <VocationSelectionContainer>
-        <h3>Passo 1: Escolha sua classe</h3>
+        <h3>Passo 2: Escolha sua classe</h3>
 
         <VocationSelectionBody>
           <VocationSelectionForm>
@@ -136,17 +147,40 @@ export function VocationSelection() {
 
               <section className={"infoSection"}>
                 <h5>Descrição</h5>
-                <p>{selectedVocation.description}</p>
+                <p>{selectedVocation.description.split(".")[0] + "."}</p>
               </section>
 
               <section className={"infoSection"}>
                 <h5>Bonus de atributos</h5>
-                <p>Força +{selectedVocation.attributesBonus.strength}</p>
-                <p>Agilidade +{selectedVocation.attributesBonus.agility}</p>
-                <p>
-                  Inteligencia +{selectedVocation.attributesBonus.intelligence}
-                </p>
-                <p>Vontade +{selectedVocation.attributesBonus.will}</p>
+
+                {selectedVocation.attributesBonus.strength !== 0 ? (
+                  <p>{"Força +" + selectedVocation.attributesBonus.strength}</p>
+                ) : (
+                  <></>
+                )}
+
+                {selectedVocation.attributesBonus.agility !== 0 ? (
+                  <p>
+                    {"Agilidade +" + selectedVocation.attributesBonus.agility}
+                  </p>
+                ) : (
+                  <></>
+                )}
+
+                {selectedVocation.attributesBonus.intelligence !== 0 ? (
+                  <p>
+                    {"Inteligencia +" +
+                      selectedVocation.attributesBonus.intelligence}
+                  </p>
+                ) : (
+                  <></>
+                )}
+
+                {selectedVocation.attributesBonus.will !== 0 ? (
+                  <p>{"Vontade +" + selectedVocation.attributesBonus.will}</p>
+                ) : (
+                  <></>
+                )}
               </section>
 
               <section className={"infoSection"}>
@@ -160,7 +194,10 @@ export function VocationSelection() {
         </VocationSelectionBody>
       </VocationSelectionContainer>
 
-      <NavigationBar previousPage={"/race-selection"} nextPage={"/"} />
+      <NavigationBar
+        previousPage={"/race-selection"}
+        nextPage={"/skills-selection"}
+      />
     </>
   );
 }

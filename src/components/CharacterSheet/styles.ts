@@ -28,13 +28,14 @@ export const CharacterSheetContainer = styled.div`
 
     .BasicInfo {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
 
       gap: 1rem;
 
-      margin: 1rem 0;
-      padding: 0.5rem;
+      margin: 0 0 1rem 0;
+      padding: 1rem;
       background-color: ${(props) => props.theme.black};
 
       border-radius: 4px;
