@@ -113,23 +113,6 @@ export const CharacterSheetContainer = styled.div`
     ul li {
       list-style: none;
     }
-
-    ul li button {
-      text-transform: none;
-      text-decoration: underline;
-      background: none;
-      border: none;
-
-      cursor: pointer;
-
-      padding: 0.5rem;
-
-      color: ${(props) => props.theme.white};
-
-      &:hover {
-        color: ${(props) => props.theme["green-300"]};
-      }
-    }
   }
 
   .EquipmentSection,

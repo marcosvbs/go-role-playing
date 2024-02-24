@@ -13,13 +13,31 @@ export const ModalOverlay = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: flex-end;
+  display: grid;
+  gap: 0.5rem;
+
+  grid-template-columns: max-content max-content;
 
   .closeButton {
-    background-color: red;
-    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2rem;
+    height: 2rem;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    border: 1px solid ${(props) => props.theme["low-opacity-gray"]};
+    border-radius: 4px;
+    background-color: ${(props) => props.theme["gray-600"]};
+
+    color: ${(props) => props.theme.white};
+  }
+
+  .closeButton:hover {
+    color: ${(props) => props.theme["green-300"]};
   }
 `;

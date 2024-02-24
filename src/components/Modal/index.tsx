@@ -20,11 +20,14 @@ export function Modal({ isOpen, skill, close }: ModalProps) {
     return (
       <ModalOverlay onClick={close}>
         <ModalContent>
+          <div></div>
+
           <button onClick={close} className={"closeButton"}>
-            Fechar
+            X
           </button>
 
           <SkillCard skill={skill} />
+          <div></div>
         </ModalContent>
       </ModalOverlay>
     );
