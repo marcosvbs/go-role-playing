@@ -12,6 +12,7 @@ import { skills } from "../../data/skills.json";
 import { useContext, useEffect, useState } from "react";
 import { StepsSelectionContext } from "../../contexts/StepsSelectionContext";
 import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
+import { SkillButton } from "../../components/SkillButton";
 
 interface Skill {
   id: number;
@@ -106,6 +107,8 @@ export function SkillsSelection() {
         <SkillsSelectionBody>
           <SkillsSelectionForm>
             <SkillsOptions>
+              <h5>Escolha até 3 habilidades:</h5>
+
               {vocationSkills.map((skill) => (
                 <div className={"option"} key={skill.id}>
                   <input
@@ -123,7 +126,7 @@ export function SkillsSelection() {
                     }}
                   />
                   <label htmlFor={skill.name}>{skill.name}</label>
-                  <button>Ver detalhes</button>
+                  <SkillButton skill={skill} altLabel={"Ver detalhes"} />
                 </div>
               ))}
             </SkillsOptions>

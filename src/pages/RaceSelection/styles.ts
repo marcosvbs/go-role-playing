@@ -57,12 +57,13 @@ export const RaceOptions = styled.form`
     }
   }
 `;
+
 export const SelectedRaceInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
-  padding: 1rem;
+  padding: 2rem;
 
   border: 1px solid ${(props) => props.theme["low-opacity-gray"]};
   border-radius: 4px;

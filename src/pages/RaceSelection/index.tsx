@@ -147,12 +147,12 @@ export function RaceSelection() {
 
               <section className={"infoSection"}>
                 <h5>Biologia</h5>
-                <p>{selectedRace.biology.split(".")[0] + "."}</p>
+                <p>{selectedRace.biology}</p>
               </section>
 
               <section className={"infoSection"}>
                 <h5>Cultura</h5>
-                <p>{selectedRace.culture.split(".")[0] + "."}</p>
+                <p>{selectedRace.culture}</p>
               </section>
 
               <section className={"infoSection"}>

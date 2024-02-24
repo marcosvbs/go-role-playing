@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CharacterSheetContainer } from "./styles";
 import { CharacterSheetContext } from "../../contexts/CharacterSheetContext";
+import { SkillButton } from "../SkillButton";
 
 export function CharacterSheet() {
   const { characterSheet } = useContext(CharacterSheetContext);
@@ -137,18 +138,16 @@ export function CharacterSheet() {
         <ul>
           {characterSheet.skills.raceAutomaticSkill ? (
             <li key={characterSheet.skills.raceAutomaticSkill.name}>
-              <button className={"skillButton"}>
-                {characterSheet.skills.raceAutomaticSkill.name}
-              </button>
+              <SkillButton skill={characterSheet.skills.raceAutomaticSkill} />
             </li>
           ) : (
             <></>
           )}
           {characterSheet.skills.vocationAutomaticSkill ? (
             <li key={characterSheet.skills.vocationAutomaticSkill.name}>
-              <button className={"skillButton"}>
-                {characterSheet.skills.vocationAutomaticSkill.name}
-              </button>
+              <SkillButton
+                skill={characterSheet.skills.vocationAutomaticSkill}
+              />
             </li>
           ) : (
             <></>
@@ -156,7 +155,7 @@ export function CharacterSheet() {
           {characterSheet.skills.vocationSkills ? (
             characterSheet.skills.vocationSkills?.map((skill) => (
               <li key={skill.name}>
-                <button className={"skillButton"}>{skill.name}</button>
+                <SkillButton skill={skill} />
               </li>
             ))
           ) : (

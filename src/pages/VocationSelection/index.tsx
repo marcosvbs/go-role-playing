@@ -147,7 +147,7 @@ export function VocationSelection() {
 
               <section className={"infoSection"}>
                 <h5>Descrição</h5>
-                <p>{selectedVocation.description.split(".")[0] + "."}</p>
+                <p>{selectedVocation.description}</p>
               </section>
 
               <section className={"infoSection"}>

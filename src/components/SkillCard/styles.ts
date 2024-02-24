@@ -46,4 +46,8 @@ export const SkillCardHeader = styled.div`
 export const SkillCardBody = styled.div`
   display: flex;
   flex-direction: column;
+
+  h5 {
+    text-align: left;
+  }
 `;
