@@ -21,10 +21,6 @@ export const HomeContainer = styled.div`
     border-radius: 4px;
   }
 
-  h5 {
-    padding-bottom: 1rem;
-  }
-
   p {
     padding-bottom: 1.5rem;
   }

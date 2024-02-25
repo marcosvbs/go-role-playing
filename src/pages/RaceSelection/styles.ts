@@ -56,9 +56,8 @@ export const RaceSelectionForm = styled.div`
 `;
 
 export const RaceOptions = styled.form`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
   padding: 2rem;

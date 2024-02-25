@@ -57,9 +57,8 @@ export const VocationSelectionForm = styled.div`
 `;
 
 export const VocationOptions = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
   padding: 2rem;
