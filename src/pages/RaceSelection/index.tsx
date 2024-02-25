@@ -162,7 +162,9 @@ export function RaceSelection() {
             </SelectedRaceInfo>
           </RaceSelectionForm>
 
-          <CharacterSheet />
+          <div className="characterSheetContainer">
+            <CharacterSheet />
+          </div>
         </RaceSelectionBody>
       </RaceSelectionContainer>
 

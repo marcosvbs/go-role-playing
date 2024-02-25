@@ -8,6 +8,13 @@ export const NavigationBarContainer = styled.nav`
   justify-content: space-between;
 
   margin: 4rem auto;
+  padding: 0 1rem;
 
   max-width: 880px;
+
+  @media (max-width: 425px) {
+    margin: 4rem 1rem;
+
+    width: 100vw;
+  }
 `;

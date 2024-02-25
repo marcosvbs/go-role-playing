@@ -5,9 +5,7 @@ export const CharacterSheetContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
 
-  width: 50%;
-
-  max-width: 50%;
+  width: 100%;
 
   padding: 1.5rem;
 

@@ -28,4 +28,12 @@ export const HomeContainer = styled.div`
   p {
     padding-bottom: 1.5rem;
   }
+
+  @media (max-width: 425px) {
+    div {
+      margin: 0 1rem;
+
+      width: 100vw;
+    }
+  }
 `;
