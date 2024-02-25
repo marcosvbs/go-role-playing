@@ -66,20 +66,26 @@ export const RaceOptions = styled.form`
   border-radius: 4px;
   background-color: ${(props) => props.theme["gray-600"]};
 
-  .option {
+  .optionContainer {
     display: flex;
-    flex-direction: row;
+
+    width: 100%;
     gap: 0.25rem;
     cursor: pointer;
 
-    input {
-      padding: 0.5rem;
-      cursor: pointer;
-    }
+    .option {
+      display: flex;
+      flex-direction: row;
 
-    label {
-      padding: 0.5rem;
-      cursor: pointer;
+      input {
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+
+      label {
+        padding: 0.5rem;
+        cursor: pointer;
+      }
     }
   }
 

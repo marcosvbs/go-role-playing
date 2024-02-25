@@ -120,18 +120,20 @@ export function RaceSelection() {
               {avaliableRaces ? (
                 avaliableRaces.map((race) => {
                   return (
-                    <div className={"option"} key={race.id}>
-                      <input
-                        type={"radio"}
-                        id={race.name}
-                        name={"races"}
-                        value={race.name}
-                        checked={race.id === selectedRace.id}
-                        onChange={() => {
-                          handleSelectRace(race.id);
-                        }}
-                      />
-                      <label htmlFor={race.name}>{race.name}</label>
+                    <div className={"optionContainer"} key={race.id}>
+                      <div className={"option"}>
+                        <input
+                          type={"radio"}
+                          id={race.name}
+                          name={"races"}
+                          value={race.name}
+                          checked={race.id === selectedRace.id}
+                          onChange={() => {
+                            handleSelectRace(race.id);
+                          }}
+                        />
+                        <label htmlFor={race.name}>{race.name}</label>
+                      </div>
                     </div>
                   );
                 })

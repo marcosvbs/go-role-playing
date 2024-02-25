@@ -120,18 +120,20 @@ export function VocationSelection() {
               {avaliableVocations ? (
                 avaliableVocations.map((vocation) => {
                   return (
-                    <div className={"option"} key={vocation.id}>
-                      <input
-                        type={"radio"}
-                        id={vocation.name}
-                        name={"vocations"}
-                        value={vocation.name}
-                        checked={vocation.id === selectedVocation.id}
-                        onChange={() => {
-                          handleSelectVocation(vocation.id);
-                        }}
-                      />
-                      <label htmlFor={vocation.name}>{vocation.name}</label>
+                    <div className={"optionContainer"} key={vocation.id}>
+                      <div className={"option"}>
+                        <input
+                          type={"radio"}
+                          id={vocation.name}
+                          name={"vocations"}
+                          value={vocation.name}
+                          checked={vocation.id === selectedVocation.id}
+                          onChange={() => {
+                            handleSelectVocation(vocation.id);
+                          }}
+                        />
+                        <label htmlFor={vocation.name}>{vocation.name}</label>
+                      </div>
                     </div>
                   );
                 })

@@ -67,25 +67,41 @@ export const SkillsOptions = styled.form`
   border-radius: 4px;
   background-color: ${(props) => props.theme["gray-600"]};
 
-  .option {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .optionContainer {
+    display: flex;
 
     width: 100%;
     gap: 0.25rem;
     cursor: pointer;
 
-    input {
-      padding: 0.5rem;
-      cursor: pointer;
-    }
-
-    label {
+    .option {
       display: flex;
-      flex-direction: column;
-      padding: 0.5rem;
+      flex-direction: row;
 
-      cursor: pointer;
+      input {
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+
+      label {
+        display: flex;
+        padding: 0.5rem;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    .optionContainer {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+
+      .option {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
     }
   }
 `;

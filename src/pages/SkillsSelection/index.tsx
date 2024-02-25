@@ -110,22 +110,25 @@ export function SkillsSelection() {
               <h5>Escolha até 3 habilidades:</h5>
 
               {vocationSkills.map((skill) => (
-                <div className={"option"} key={skill.id}>
-                  <input
-                    type={"checkbox"}
-                    id={skill.name}
-                    name={"skill"}
-                    value={skill.name}
-                    checked={checkIfSkillIsSelected(skill.id)}
-                    disabled={
-                      !checkIfSkillIsSelected(skill.id) &&
-                      selectedSkills.length >= maxNumberOfSelectedSkills
-                    }
-                    onChange={() => {
-                      handleSelectSkill(skill.id);
-                    }}
-                  />
-                  <label htmlFor={skill.name}>{skill.name}</label>
+                <div className={"optionContainer"} key={skill.id}>
+                  <div className={"option"}>
+                    <input
+                      type={"checkbox"}
+                      id={skill.name}
+                      name={"skill"}
+                      value={skill.name}
+                      checked={checkIfSkillIsSelected(skill.id)}
+                      disabled={
+                        !checkIfSkillIsSelected(skill.id) &&
+                        selectedSkills.length >= maxNumberOfSelectedSkills
+                      }
+                      onChange={() => {
+                        handleSelectSkill(skill.id);
+                      }}
+                    />
+                    <label htmlFor={skill.name}>{skill.name}</label>
+                  </div>
+
                   <SkillButton skill={skill} altLabel={"Ver detalhes"} />
                 </div>
               ))}
