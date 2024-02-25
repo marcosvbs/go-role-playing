@@ -40,4 +40,12 @@ export const ModalContent = styled.div`
   .closeButton:hover {
     color: ${(props) => props.theme["green-300"]};
   }
+
+  @media (max-width: 425px) {
+    width: 100vw;
+    padding: 0 1rem;
+
+    grid-template-columns: 100%;
+    justify-items: end;
+  }
 `;

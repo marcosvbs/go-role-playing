@@ -68,9 +68,10 @@ export const SkillsOptions = styled.form`
   background-color: ${(props) => props.theme["gray-600"]};
 
   .option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     width: 100%;
-    display: flex;
-    flex-direction: row;
     gap: 0.25rem;
     cursor: pointer;
 
