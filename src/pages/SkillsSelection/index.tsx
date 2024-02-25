@@ -132,7 +132,9 @@ export function SkillsSelection() {
             </SkillsOptions>
           </SkillsSelectionForm>
 
-          <CharacterSheet />
+          <div className="characterSheetContainer">
+            <CharacterSheet />
+          </div>
         </SkillsSelectionBody>
       </SkillsSelectionContainer>
 

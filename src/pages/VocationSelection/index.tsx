@@ -190,7 +190,9 @@ export function VocationSelection() {
             </SelectedVocationInfo>
           </VocationSelectionForm>
 
-          <CharacterSheet />
+          <div className="characterSheetContainer">
+            <CharacterSheet />
+          </div>
         </VocationSelectionBody>
       </VocationSelectionContainer>
 

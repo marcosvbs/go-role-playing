@@ -12,6 +12,17 @@ export const SkillsSelectionContainer = styled.div`
   h3 {
     margin-bottom: 2.5rem;
   }
+
+  @media (max-width: 425px) {
+    margin: 0;
+    padding: 0 1rem;
+    max-width: 100%;
+    width: 100vw;
+
+    h3 {
+      margin: 2rem 0 1rem;
+    }
+  }
 `;
 
 export const SkillsSelectionBody = styled.div`
@@ -19,6 +30,19 @@ export const SkillsSelectionBody = styled.div`
   flex-direction: row;
   align-items: start;
   gap: 1rem;
+
+  .characterSheetContainer {
+    width: 50%;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+
+    .characterSheetContainer {
+      display: none;
+    }
+  }
 `;
 
 export const SkillsSelectionForm = styled.div`
@@ -26,6 +50,10 @@ export const SkillsSelectionForm = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media (max-width: 425px) {
+    max-width: 100%;
+  }
 `;
 
 export const SkillsOptions = styled.form`

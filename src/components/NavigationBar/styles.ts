@@ -13,7 +13,7 @@ export const NavigationBarContainer = styled.nav`
   max-width: 880px;
 
   @media (max-width: 425px) {
-    margin: 4rem 1rem;
+    margin: 2rem 0;
 
     width: 100vw;
   }

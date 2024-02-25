@@ -13,7 +13,8 @@ export const RaceSelectionContainer = styled.div`
   }
 
   @media (max-width: 425px) {
-    margin: 0 1rem;
+    margin: 0;
+    padding: 0 1rem;
     max-width: 100%;
     width: 100vw;
 

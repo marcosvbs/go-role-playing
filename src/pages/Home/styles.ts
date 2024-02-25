@@ -30,9 +30,9 @@ export const HomeContainer = styled.div`
   }
 
   @media (max-width: 425px) {
-    div {
-      margin: 0 1rem;
+    padding: 0 1rem;
 
+    div {
       width: 100vw;
     }
   }
