@@ -191,6 +191,7 @@ export function CharacterSheetContextProvider({
     }));
 
     updateCharacterSheetAttributes();
+    updateCharacterSheetDefense();
   }
 
   function updateCharacterSheetVocation(vocation: Vocation) {
@@ -211,6 +212,7 @@ export function CharacterSheetContextProvider({
     }));
 
     updateCharacterSheetAttributes();
+    updateCharacterSheetDefense();
   }
 
   function updateCharacterSheetAttributes() {
@@ -229,6 +231,22 @@ export function CharacterSheetContextProvider({
         will:
           prevCharacterSheet.raceAttributes.will +
           prevCharacterSheet.vocationAttributes.will,
+      },
+    }));
+  }
+
+  function updateCharacterSheetDefense() {
+    setCharacterSheet((prevCharacterSheet) => ({
+      ...prevCharacterSheet,
+      defense: {
+        block: 5 + prevCharacterSheet.attributes.strength,
+        dodge: 5 + prevCharacterSheet.attributes.agility,
+        determination:
+          8 +
+          Math.max(
+            prevCharacterSheet.attributes.intelligence,
+            prevCharacterSheet.attributes.will
+          ),
       },
     }));
   }
